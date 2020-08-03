@@ -12,3 +12,40 @@ h1, h2, h3 {
     font: 14px Roboto, Arial, sans-serif;
 }
 
+
+#header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+#keyboardSymbol {margin-bottom:10px;}
+
+@media only screen and (max-width: 600px) {
+  
+    .desktopLogo,.desktopPrompt {
+        display: none;
+    }
+
+    .mobileLogo {
+        display: inline;
+    }
+
+    .mobilePrompt{display: inline;}
+
+    body{padding: 5px;}
+}
+
+@media only screen and (min-width: 600px) {
+   
+    .desktopLogo {
+        display: block;
+    }
+
+    .desktopPrompt {
+        display: inline;
+    }
+
+    .mobilePrompt,.mobileLogo {
+        display: none;
+    }
+}
