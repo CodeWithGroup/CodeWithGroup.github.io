@@ -1,8 +1,20 @@
-var intervalTypingMilliseconds = 300;
-var intervalChangeText = 5000;
-var lastSuffixIndex = 10;
+var intervalTypingMillisecondsBase = 50;
+var intervalTypingMaxMilliseconds = 200;
+var intervalChangeText = 4000;
 
-var suffixes = [
+var currentSuffixIndex, lastSuffixIndex, lastSuffixButOneIndex;
+
+var languages = [
+    "C#",
+    "CSS",
+    "HTML",
+    "JAVA",
+    "JAVASCRIPT",
+    "PYTHON",
+    "SQL"
+]
+
+var people = [
     "BEN",
     "DREW",
     "EDWARD",
@@ -19,26 +31,35 @@ var suffixes = [
 function showText(target, message, index, maxInterval) {
     if (index < message.length) {
         $(target).append(message[index++]);
-        var randomTypingInterval = Math.floor(Math.random() * maxInterval);
+        
+        var typingInterval = maxInterval - intervalTypingMillisecondsBase;
+        if (typingInterval < 0) {
+            typingInterval = 0;
+        }
+
+        typingInterval = intervalTypingMillisecondsBase + Math.floor(Math.random() * typingInterval);
         setTimeout(function() {
             showText(target, message, index, maxInterval);
-        }, randomTypingInterval);
+        }, typingInterval);
     }
 }
 
-function showSuffix(target, suffixInterval) {
-    var suffixIndex = Math.floor(Math.random() * suffixes.length);
-    while (suffixIndex === lastSuffixIndex) {
-        var suffixIndex = Math.floor(Math.random() * suffixes.length);
+function showSuffix(target, suffixOptions, suffixInterval) {
+    while (currentSuffixIndex === lastSuffixIndex || currentSuffixIndex === lastSuffixButOneIndex) {
+        currentSuffixIndex = Math.floor(Math.random() * suffixOptions.length);
     }
+    lastSuffixButOneIndex = lastSuffixIndex;    
+    lastSuffixIndex = currentSuffixIndex;
     
     setTimeout(function() {
         $(target).text('');
-        showText(target, suffixes[suffixIndex], 0, intervalTypingMilliseconds);
-        showSuffix(target, suffixInterval)
+        showText(target, suffixOptions[currentSuffixIndex], 0, intervalTypingMaxMilliseconds);
+        showSuffix(target, suffixOptions, suffixInterval)
     }, intervalChangeText);
 }
 
 $(function() {
-    showSuffix("#suffix", intervalChangeText);
+    var suffixOptions = languages;
+    currentSuffixIndex = lastSuffixIndex = lastSuffixButOneIndex = suffixOptions.length - 1;
+    showSuffix("#suffix", suffixOptions, intervalChangeText);
 })
