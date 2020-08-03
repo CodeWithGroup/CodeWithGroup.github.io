@@ -1,0 +1,25 @@
+:root {
+    --colour-dark-primary: #1f5237;
+    --colour-dark-secondary: #00793c;
+    --colour-light-secondary: #009545;
+    --colour-light-primary: #00b050;
+    --colour-black: #000000;
+    --colour-white: #f8f8f8;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.logo-title
+{
+    color: var(--colour-light-black);
+    font-family: "Boogaloo";
+    font-size: 48pt;
+    letter-spacing: 0.05em;
+}
+
+.logo-title .typed-suffix
+{
+    color: var(--colour-light-primary);
+}
