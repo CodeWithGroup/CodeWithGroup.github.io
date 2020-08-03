@@ -1,2 +1,14 @@
-p{font-family: 'Boogaloo', cursive;}
-h1,h2,h3{font-family: 'Roboto', sans-serif;}
+p {
+    font-family: 'Roboto', cursive;
+}
+
+h1, h2, h3 {
+    font-family: 'Boogaloo', sans-serif;
+}
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Roboto, Arial, sans-serif;
+}
+
