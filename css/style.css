@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 #keyboardSymbol {margin-bottom:10px;}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   
     .desktopLogo,.desktopPrompt {
         display: none;
@@ -35,7 +35,7 @@ h1, h2, h3 {
     body{padding: 5px;}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
    
     .desktopLogo {
         display: block;
