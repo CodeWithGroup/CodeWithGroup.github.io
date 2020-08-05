@@ -20,9 +20,9 @@ h1, h2, h3 {
 
 #keyboardSymbol {margin-bottom:10px;}
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   
-    .desktopLogo,.desktopPrompt {
+    .desktopLogo{
         display: none;
     }
 
@@ -30,22 +30,19 @@ h1, h2, h3 {
         display: inline;
     }
 
-    .mobilePrompt{display: inline;}
 
     body{padding: 5px;}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
    
     .desktopLogo {
         display: block;
     }
 
-    .desktopPrompt {
-        display: inline;
-    }
+  
 
-    .mobilePrompt,.mobileLogo {
+    .mobileLogo {
         display: none;
     }
 }
