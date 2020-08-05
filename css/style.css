@@ -12,36 +12,32 @@ h1, h2, h3 {
     font: 14px Roboto, Arial, sans-serif;
 }
 
-
 #header {
     padding-top: 5px;
     padding-bottom: 5px;
-  }
+}
 
-#keyboardSymbol {margin-bottom:10px;}
+#keyboardSymbol {
+    margin-bottom: 10px;
+    margin-top: 10px
+}
 
 @media only screen and (max-width: 992px) {
-  
-    .desktopLogo{
+    .desktopLogo {
         display: none;
     }
-
     .mobileLogo {
         display: inline;
     }
-
-
-    body{padding: 5px;}
+    body {
+        padding: 5px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
-   
     .desktopLogo {
         display: block;
     }
-
-  
-
     .mobileLogo {
         display: none;
     }
