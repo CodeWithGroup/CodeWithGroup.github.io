@@ -1,3 +1,5 @@
+"use strict"
+
 $(function () {
     var $window = $(window);
     var $pane = $('#main-container');
