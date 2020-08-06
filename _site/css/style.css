@@ -31,7 +31,26 @@ filter: invert(100%) sepia(1%) saturate(173%) hue-rotate(331deg) brightness(114%
 a,
 a:focus,
 a:hover {
-    color: var(--colour-black);
+    color: var(--colour-light-primary);
+}
+
+a, a:focus {
+    text-decoration: dotted underline;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    font-size: 105%;
+    text-decoration: solid underline;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Custom default button */
@@ -84,6 +103,12 @@ nav#sidebar {
 
 h1,
 h2,
+h3 {
+    color: var(--colour-light-primary);
+}
+
+h1,
+h2,
 h3,
 h4,
 h5,
@@ -91,9 +116,23 @@ h6 {
     font-family: 'Boogaloo';
 }
 
+.open-dyslexic h1,
+.open-dyslexic h2,
+.open-dyslexic h3,
+.open-dyslexic h4,
+.open-dyslexic h5,
+.open-dyslexic h6 {
+    font-family: 'opendyslexicregular';
+}
+
 hr {
     border: 1px solid var(--colour-white);
     margin: 0 0 0.5em 0;
+}
+
+iframe {
+    width: 100%;
+    height: 80vh;
 }
 
 .center-when-small {
@@ -149,7 +188,7 @@ hr {
 
 @media screen and (min-width: 768px) {
     .page-wrapper.toggled .page-content {
-        padding-left: 300px;
+        padding-left: 340px;
     }
 }
 
@@ -170,12 +209,12 @@ hr {
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
-    width: 260px;
+    width: 300px;
     height: 100%;
     max-height: 100%;
     position: fixed;
     top: 0;
-    left: -300px;
+    left: -340px;
     z-index: 999;
 }
 
@@ -470,6 +509,13 @@ hr {
 
 .page-wrapper .page-content {
     overflow-x: hidden;
+}
+
+/* Activity and resource cards */
+
+.card {
+    margin: 0.5em;
+    padding: 1em;
 }
 
 /*------scroll bar---------------------*/

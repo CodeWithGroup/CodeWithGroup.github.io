@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include head.html %}
-    <body>
-        <div id="main-container" class="page-wrapper toggled">
-            {% include sidebar.html %}
-            <main role="main" class="page-content">
-                {{content}}
-            </main>
-            {% include footer.html %}
-            {% include scripts.html %}
-        </div>
-    </body>
+{% include head.html %}
+
+<body>
+    <div id="main-container" class="page-wrapper toggled">
+        {% include sidebar.html %}
+        <main role="main" class="page-content">
+            <a name="top"></a>
+            <div class="row">
+                <div class="main-logo">
+                    <img src="./images/keyboard-green.png">
+                </div>
+                <div class="main-logo-title">
+                    <h1 class="cover-heading">CODEWITH<span id="suffix" class="typed-suffix">US</span></h1>
+                </div>
+            </div>
+            <div class="row unpadded">
+                <div class="col-lg-10">
+                    {{content}}
+                </div>
+            </div>
+            {% include back-to-top.html %}
+        </main>
+        {% include scripts.html %}
+    </div>
+</body>
+
 </html>

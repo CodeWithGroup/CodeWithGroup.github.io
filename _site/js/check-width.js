@@ -6,7 +6,7 @@ $(function () {
 
     function checkWidth() {
         var windowsize = $window.width();
-        if (windowsize < 768) {
+        if (windowsize <= 768) {
             if ($pane.hasClass('toggled')) {
                 $pane.toggleClass('toggled');
             }
