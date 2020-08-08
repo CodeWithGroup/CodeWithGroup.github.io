@@ -1,0 +1,66 @@
+p {
+    font-family: 'Roboto', cursive;
+}
+
+h1, h2, h3 {
+    font-family: 'Boogaloo', sans-serif;
+}
+#gdpr_39820{
+    width:5%;
+}
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Roboto, Arial, sans-serif;
+}
+
+#header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#keyboardSymbol {
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+@media only screen and (max-width: 992px) {
+    .desktopLogo {
+        display: none;
+    }
+    .mobileLogo {
+        display: inline;
+    }
+    body {
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .desktopLogo {
+        display: block;
+    }
+    .mobileLogo {
+        display: none;
+    }
+}
+
+#mc-embedded-subscribe-form input[type=checkbox] {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+}
+
+#mergeRow-gdpr {
+    margin-top: 20px;
+}
+
+#mergeRow-gdpr fieldset label {
+    font-weight: normal;
+}
+
+#mc-embedded-subscribe-form .mc_fieldset {
+    border: none;
+    min-height: 0px;
+    padding-bottom: 0px;
+}
