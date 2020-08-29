@@ -286,6 +286,11 @@ iframe {
 /* About */
 img.profile-photo {
     width: 100%;
+    border-radius: 10px;
+}
+
+.committee-photos img.profile-photo {
+    border-radius: 5px;
 }
 
 /* Events */
@@ -361,6 +366,10 @@ div.event-book-button {
     .logo-col {
         width: 120px;
     }
+
+    span#small-screen-break {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -383,9 +392,5 @@ div.event-book-button {
     .mastfoot,
     .cover-container {
         width: 700px;
-    }
-
-    span#small-screen-break {
-        display: none;
     }
 }
