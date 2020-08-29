@@ -34,6 +34,12 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/sidebar.css">
 
+        <!-- I know scripts aren't supposed to go in the header, but we need this here in order to pick different suffix lists for the typewriter at the top -->
+        <script src="./js/suffix-lists.js"></script>
+        <script lang="javascript">
+            var suffixOptions = Resources;
+        </script>
+
     </head>
 
 
@@ -115,7 +121,7 @@
                     <img src="./images/keyboard-green.png">
                 </div>
                 <div class="main-logo-title">
-                    <h1 class="cover-heading">CODEWITH<span id="suffix" class="typed-suffix">US</span></h1>
+                    <h1 class="cover-heading">CODEWITH<span id="small-screen-break"><br /></span><span id="suffix" class="typed-suffix">US</span></h1>
                 </div>
             </div>
             <div class="row unpadded">
@@ -135,6 +141,7 @@
     Jump to: <a href="#resources-ides">Integrated Development Environments (IDEs)</a> | <a href="#resources-tools">Other
         Tools</a>
 </p>
+
 <div class="row">
     <div class="col-md-12">
         <a name="resources-ides"></a>
@@ -150,6 +157,7 @@
                 <h4>
                     <span class="fab fa-android"></span>
                     <a href="https://developer.android.com/studio/" target="_blank">Android Studio</a>
+                    <span class="badge badge-danger">Difficult</span>
                 </h4>
                 <p>
                     Want to write mobile apps for Google devices? Android Studio provides the fastest tools for building
@@ -166,6 +174,7 @@
                 <h4>
                     <span class="fab fa-python"></span>
                     <a href="https://www.python.org/" target="_blank">IDLE (Python)</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Python is a simple but sophisticated language, well suited to number crunching and data science, and
@@ -182,6 +191,7 @@
                 <h4>
                     <span class="fas fa-border-all"></span>
                     <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a>
+                    <span class="badge badge-warning">Medium</span>
                 </h4>
                 <p>
                     Over the last 15 years, JetBrains has revolutionised the development industry with its intellisense,
@@ -201,6 +211,7 @@
                 <h4>
                     <span class="fab fa-microsoft"></span>
                     <a href="https://www.visualstudio.com/vs/" target="_blank">Visual Studio</a>
+                    <span class="badge badge-warning">Medium</span>
                 </h4>
                 <p>
                     Visual Studio is one of the titans of industry, having been around for over 20 years. Like Android
@@ -218,6 +229,7 @@
                 <h4>
                     <span class="fab fa-microsoft"></span>
                     <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Despite sharing its big brother's name, Visual Studio Code is a tiny, nimble, stripped-down code
@@ -230,6 +242,9 @@
 </div>
 <div class="row unpadded">
     <div class="col">
+        <p>
+            &nbsp;
+        </p>
         <p>
             <a href="#">Back to top</a>
         </p>
@@ -253,6 +268,7 @@
                 <h4>
                     <span class="fas fa-palette"></span>
                     <a href="https://coolors.co/app" target="_blank">Coolors</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Coolors is a great little web app that shows you five colours alongside each other, with a random
@@ -273,6 +289,7 @@
                 <h4>
                     <span class="fab fa-codepen"></span>
                     <a href="https://codepen.io" target="_blank">CodePen</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     CodePen is a development environment for front-end designers and developers. You can use it to
@@ -290,6 +307,7 @@
                 <h4>
                     <span class="fab fa-font-awesome"></span>
                     <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+                    <span class="badge badge-warning">Medium</span>
                 </h4>
                 <p>
                     Font Awesome is a font and icon toolkit based on CSS and Less which takes 2 minutes to add to a site
@@ -305,6 +323,7 @@
                 <h4>
                     <span class="fab fa-google"></span>
                     <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Google Fonts provides a massive list of fonts for any website. It includes a layout editor, an
@@ -325,6 +344,7 @@
                 <h4>
                     <span class="fab fa-galactic-republic"></span>
                     <a href="https://repl.it/" target="_blank">Repl</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Repl is an online editor/sandbox allowing you to write in 50 different programming languages, no
@@ -339,6 +359,9 @@
             <div class="row unpadded">
     <div class="col">
         <p>
+            &nbsp;
+        </p>
+        <p>
             <a href="#">Back to top</a>
         </p>
         <p>
@@ -347,7 +370,8 @@
     </div>
 </div>
         </main>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="./js/ie10-viewport-bug-workaround.js"></script>
 
 <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -372,11 +396,11 @@
     function gtag() {
         dataLayer.push(arguments);
     }
-    
+
     gtag('js', new Date());
     gtag('config', 'UA-174926144-1');
 </script>
-    </div>
+
 </body>
 
 </html>

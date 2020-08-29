@@ -34,6 +34,12 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/sidebar.css">
 
+        <!-- I know scripts aren't supposed to go in the header, but we need this here in order to pick different suffix lists for the typewriter at the top -->
+        <script src="./js/suffix-lists.js"></script>
+        <script lang="javascript">
+            var suffixOptions = Activities;
+        </script>
+
     </head>
 
 
@@ -115,7 +121,7 @@
                     <img src="./images/keyboard-green.png">
                 </div>
                 <div class="main-logo-title">
-                    <h1 class="cover-heading">CODEWITH<span id="suffix" class="typed-suffix">US</span></h1>
+                    <h1 class="cover-heading">CODEWITH<span id="small-screen-break"><br /></span><span id="suffix" class="typed-suffix">US</span></h1>
                 </div>
             </div>
             <div class="row unpadded">
@@ -145,6 +151,7 @@
                 <h4>
                     <span class="fab fa-connectdevelop"></span>
                     <a href="https://www.codecademy.com/" target="_blank">Codecademy</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Code Academy gives you specific problems to solve and, as you solve each one, the difficulty
@@ -161,6 +168,7 @@
                 <h4>
                     <span class="fas fa-fist-raised"></span>
                     <a href="https://codecombat.com/play" target="_blank">Code Combat</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Code Combat was designed for use in schools but is a great place to start if you're looking
@@ -177,6 +185,7 @@
                 <h4>
                     <span class="fas fa-utensils"></span>
                     <a href="https://flukeout.github.io/" target="_blank">CSS Diner</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     This is a simple game that introduces you to different CSS selectors in an interactive and
@@ -193,6 +202,7 @@
                 <h4>
                     <span class="fab fa-css3-alt"></span>
                     <a href="https://css-tricks.com" target="_blank">CSS Tricks</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     CSS Tricks is an excellent website with a large amount of information on CSS, including
@@ -208,6 +218,7 @@
                 <h4>
                     <span class="fab fa-free-code-camp"></span>
                     <a href="https://freecodecamp.org" target="_blank">FreeCodeCamp</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     FreeCodeCamp is a popular online learning tool for beginners to get to grips with
@@ -225,6 +236,7 @@
                     <span class="fab fa-git-alt"></span>
                     <a href="http://rogerdudler.github.io/git-guide/" target="_blank">git - the
                         simple guide</a>
+                    <span class="badge badge-warning">Medium</span>
                 </h4>
                 <p>
                     Just a simple guide for getting started with git, no deep or confusing stuff.
@@ -241,10 +253,11 @@
                 <h4>
                     <span class="fab fa-js-square"></span>
                     <a href="https://javascript.info" target="_blank">The Modern JS Tutorial</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
-                    Javascript.info has its own built in search function, using which you can
-                    search every aspect of javascript for helpful guides and examples.
+                    Has its own built in search function, using which you can search every aspect of javascript for
+                    helpful guides and examples.
                 </p>
             </div>
         </div>
@@ -256,6 +269,7 @@
                 <h4>
                     <span class="fas fa-user-graduate"></span>
                     <a href="https://www.udemy.com" target="_blank">Udemy</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Udemy is an online platform offering video tutorial courses led by real-world professionals. There
@@ -268,6 +282,9 @@
 </div>
 <div class="row unpadded">
     <div class="col">
+        <p>
+            &nbsp;
+        </p>
         <p>
             <a href="#">Back to top</a>
         </p>
@@ -291,6 +308,7 @@
                 <h4>
                     <span class="fas fa-calendar-day"></span>
                     <a href="http://100daysofcode.com/" target="_blank">#100DaysOfCode</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Alexander Kallaway spent a year and a half learning to code and had many ups and downs along the
@@ -308,6 +326,7 @@
                 <h4>
                     <span class="fas fa-candy-cane"></span>
                     <a href="http://adventofcode.com/" target="_blank">Advent of Code</a>
+                    <span class="badge badge-warning">Medium</span>
                 </h4>
                 <p>
                     In 2015 <a href="http://was.tl/" target="_blank">Eric Wastl</a>, presumably unsatisfied with the
@@ -329,6 +348,7 @@
                 <h4>
                     <span class="fas fa-dice-d6"></span>
                     <a href="http://box-256.com/" target="_blank">Box-256</a>
+                    <span class="badge badge-danger">Hard</span>
                 </h4>
                 <p>
                     Interested in what life was like when computers were programmed using 4-letter code words and
@@ -346,6 +366,7 @@
                 <h4>
                     <span class="fas fa-keyboard"></span>
                     <a href="https://www.codewars.com/" target="_blank">Code Wars</a>
+                    <span class="badge badge-warning">Medium</span>
                 </h4>
                 <p>
                     The principle behind Code Wars is that you achieve mastery through challenge, and you can improve
@@ -363,6 +384,7 @@
                 <h4>
                     <span class="fas fa-ghost"></span>
                     <a href="https://www.codingame.com/" target="_blank">CodinGame</a>
+                    <span class="badge badge-warning">Medium</span>
                 </h4>
                 <p>
                     A site where you can practice coding in almost any language you can think of. It has a beautiful
@@ -380,6 +402,7 @@
                 <h4>
                     <span class="fab fa-medapps"></span>
                     <a href="https://edabit.com" target="_blank">Edabit</a>
+                    <span class="badge badge-warning">Medium</span>
                 </h4>
                 <p>
                     Edabit simulates what programming is like in the real world while removing the tedious,
@@ -396,6 +419,7 @@
                 <h4>
                     <span class="fab fa-reddit"></span>
                     <a href="https://www.reddit.com/r/dailyprogrammer/" target="_blank">Reddit: Daily Programmer</a>
+                    <span class="badge badge-success">Easy</span>
                 </h4>
                 <p>
                     Similar to Advent of Code, this is a resource that presents you with various programming puzzles
@@ -413,6 +437,7 @@
                 <h4>
                     <span class="fas fa-list-ul"></span>
                     <a href="https://jupyter.org/try" target="_blank">Jupyter</a>
+                    <span class="badge badge-warning">Medium</span>
                 </h4>
                 <p>
                     Jupyter is an open-source web application that allows you to create and share documents that contain
@@ -431,6 +456,9 @@
             <div class="row unpadded">
     <div class="col">
         <p>
+            &nbsp;
+        </p>
+        <p>
             <a href="#">Back to top</a>
         </p>
         <p>
@@ -439,7 +467,8 @@
     </div>
 </div>
         </main>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="./js/ie10-viewport-bug-workaround.js"></script>
 
 <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -464,11 +493,11 @@
     function gtag() {
         dataLayer.push(arguments);
     }
-    
+
     gtag('js', new Date());
     gtag('config', 'UA-174926144-1');
 </script>
-    </div>
+
 </body>
 
 </html>

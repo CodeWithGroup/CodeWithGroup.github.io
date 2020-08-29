@@ -34,6 +34,12 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/sidebar.css">
 
+        <!-- I know scripts aren't supposed to go in the header, but we need this here in order to pick different suffix lists for the typewriter at the top -->
+        <script src="./js/suffix-lists.js"></script>
+        <script lang="javascript">
+            var suffixOptions = Home;
+        </script>
+
     </head>
 
 
@@ -115,7 +121,7 @@
                     <img src="./images/keyboard-green.png">
                 </div>
                 <div class="main-logo-title">
-                    <h1 class="cover-heading">CODEWITH<span id="suffix" class="typed-suffix">US</span></h1>
+                    <h1 class="cover-heading">CODEWITH<span id="small-screen-break"><br /></span><span id="suffix" class="typed-suffix">US</span></h1>
                 </div>
             </div>
             <div class="row unpadded">
@@ -156,6 +162,9 @@
             <div class="row unpadded">
     <div class="col">
         <p>
+            &nbsp;
+        </p>
+        <p>
             <a href="#">Back to top</a>
         </p>
         <p>
@@ -164,7 +173,8 @@
     </div>
 </div>
         </main>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="./js/ie10-viewport-bug-workaround.js"></script>
 
 <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -189,11 +199,11 @@
     function gtag() {
         dataLayer.push(arguments);
     }
-    
+
     gtag('js', new Date());
     gtag('config', 'UA-174926144-1');
 </script>
-    </div>
+
 </body>
 
 </html>

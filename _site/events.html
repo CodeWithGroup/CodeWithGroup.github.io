@@ -34,6 +34,12 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/sidebar.css">
 
+        <!-- I know scripts aren't supposed to go in the header, but we need this here in order to pick different suffix lists for the typewriter at the top -->
+        <script src="./js/suffix-lists.js"></script>
+        <script lang="javascript">
+            var suffixOptions = Events;
+        </script>
+
     </head>
 
 
@@ -115,20 +121,233 @@
                     <img src="./images/keyboard-green.png">
                 </div>
                 <div class="main-logo-title">
-                    <h1 class="cover-heading">CODEWITH<span id="suffix" class="typed-suffix">US</span></h1>
+                    <h1 class="cover-heading">CODEWITH<span id="small-screen-break"><br /></span><span id="suffix" class="typed-suffix">US</span></h1>
                 </div>
             </div>
             <div class="row unpadded">
                 <div class="col-lg-10">
                     <h1>Events</h1>
 
-<iframe name="events-calendar"
-    src="https://calendar.google.com/calendar/embed?wkst=1&amp;bgcolor=%23f8f8f8&amp;ctz=Europe%2FLondon&amp;src=Y29kZXdpdGhncm91cEBnbWFpbC5jb20&amp;color=%230B8043&amp;showTitle=1&amp;showNav=1&amp;showDate=1&amp;showPrint=1&amp;showTabs=1&amp;showCalendars=0&amp;showTz=1&amp;hl=en_GB"
-    style="border: none" frameborder="0" scrolling="no"></iframe>
+<section id="events">
+    <div class="row card">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-sm-4 col-lg-2 event-date">
+                    <span class="event-date-month">SEP</span>
+                    <span class="event-date-day">15</span>
+                </div>
+                <div class="col-sm-8 col-lg-10 event-title">
+                    <span class="event-title">Databases 101</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-9 event-description">
+                    <span class="event-description">
+                        A workshop for database beginners covered basics concepts of relational
+                        databases and an how to design a database structure.
+                    </span>
+                </div>
+                <div class="col-md-12 col-lg-3 event-book-button">
+                    <!-- Noscript content for added SEO -->
+                    <noscript><a href="https://www.eventbrite.co.uk/e/databases-101-tickets-117562278941"
+                            rel="noopener noreferrer" target="_blank"></noscript>
+                    <!-- You can customize this button any way you like -->
+                    <button id="eventbrite-widget-modal-trigger-117562278941" class="btn btn-primary float-right"
+                        type="button">Buy Tickets</button>
+                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row card">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-sm-4 col-lg-2 event-date">
+                    <span class="event-date-month">SEP</span>
+                    <span class="event-date-day">16</span>
+                </div>
+                <div class="col-sm-8 col-lg-10 event-title">
+                    <span class="event-title">Containers 101 - Docker</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-9 event-description">
+                    <span class="event-description">
+                        An introduction workshop to introduce you to Docker, a way of running your applications in
+                        containers.
+                    </span>
+                </div>
+                <div class="col-md-12 col-lg-3 event-book-button">
+                    <!-- Noscript content for added SEO -->
+                    <noscript><a href="https://www.eventbrite.co.uk/e/containers-101-docker-tickets-117832786035"
+                            rel="noopener noreferrer" target="_blank"></noscript>
+                    <!-- You can customize this button any way you like -->
+                    <button id="eventbrite-widget-modal-trigger-117832786035" class="btn btn-primary float-right"
+                        type="button">Buy Tickets</button>
+                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row card">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-sm-4 col-lg-2 event-date">
+                    <span class="event-date-month">SEP</span>
+                    <span class="event-date-day">16</span>
+                </div>
+                <div class="col-sm-8 col-lg-10 event-title">
+                    <span class="event-title">Just Git Started</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-9 event-description">
+                    <span class="event-description">
+                        This workshop will give you an introduction to the basics of using Git - one of the most popular
+                        version control systems out there.
+                    </span>
+                </div>
+                <div class="col-md-12 col-lg-3 event-book-button">
+                    <!-- Noscript content for added SEO -->
+                    <noscript><a href="https://www.eventbrite.co.uk/e/just-git-started-tickets-117920634793"
+                            rel="noopener noreferrer" target="_blank"></noscript>
+                    <!-- You can customize this button any way you like -->
+                    <button id="eventbrite-widget-modal-trigger-117920634793" class="btn btn-primary float-right"
+                        type="button">Buy Tickets</button>
+                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row card">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-sm-4 col-lg-2 event-date">
+                    <span class="event-date-month">SEP</span>
+                    <span class="event-date-day">17</span>
+                </div>
+                <div class="col-sm-8 col-lg-10 event-title">
+                    <span class="event-title">SQL Walkthrough</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-9 event-description">
+                    <span class="event-description">
+                        This workshop is for complete beginners, although it will help if you have attended the
+                        Databases
+                        101 workshop.
+                    </span>
+                </div>
+                <div class="col-md-12 col-lg-3 event-book-button">
+                    <!-- Noscript content for added SEO -->
+                    <noscript><a href="https://www.eventbrite.co.uk/e/sql-walkthrough-tickets-117920303803"
+                            rel="noopener noreferrer" target="_blank"></noscript>
+                    <!-- You can customize this button any way you like -->
+                    <button id="eventbrite-widget-modal-trigger-117920303803" class="btn btn-primary float-right"
+                        type="button">Buy Tickets</button>
+                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row card">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-sm-4 col-lg-2 event-date">
+                    <span class="event-date-month">SEP</span>
+                    <span class="event-date-day">18</span>
+                </div>
+                <div class="col-sm-8 col-lg-10 event-title">
+                    <span class="event-title">Containers 102 - Kubernetes</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-9 event-description">
+                    <span class="event-description">
+                        This workshop will introduce you to Kubernetes a way of deploying containers in a resilient and
+                        distributed way.
+                    </span>
+                </div>
+                <div class="col-md-12 col-lg-3 event-book-button">
+                    <!-- Noscript content for added SEO -->
+                    <noscript><a href="https://www.eventbrite.co.uk/e/containers-102-kubernetes-tickets-117832864269"
+                            rel="noopener noreferrer" target="_blank"></noscript>
+                    <!-- You can customize this button any way you like -->
+                    <button id="eventbrite-widget-modal-trigger-117832864269" class="btn btn-primary float-right"
+                        type="button">Buy Tickets</button>
+                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EventBrite Integration -->
+<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var orderComplete = function () {
+        console.log('Order complete!');
+    };
+
+    /* Databases 101 */
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '117562278941',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-117562278941',
+        onOrderComplete: orderComplete
+    });
+
+    /* Containers 101 - Docker */
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '117832786035',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-117832786035',
+        onOrderComplete: orderComplete
+    });
+
+    /* Just Git Started */
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '117920634793',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-117920634793',
+        onOrderComplete: orderComplete
+    });
+
+    /* SQL Walkthrough */
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '117920303803',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-117920303803',
+        onOrderComplete: orderComplete
+    });
+
+    /* Containers 102 - Kubernetes */
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '117832864269',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-117832864269',
+        onOrderComplete: orderComplete
+    });
+    
+</script>
                 </div>
             </div>
             <div class="row unpadded">
     <div class="col">
+        <p>
+            &nbsp;
+        </p>
         <p>
             <a href="#">Back to top</a>
         </p>
@@ -138,7 +357,8 @@
     </div>
 </div>
         </main>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="./js/ie10-viewport-bug-workaround.js"></script>
 
 <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -163,11 +383,11 @@
     function gtag() {
         dataLayer.push(arguments);
     }
-    
+
     gtag('js', new Date());
     gtag('config', 'UA-174926144-1');
 </script>
-    </div>
+
 </body>
 
 </html>

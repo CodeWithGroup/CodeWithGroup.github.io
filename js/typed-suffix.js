@@ -7,30 +7,6 @@ $(function () {
 
     var currentSuffixIndex, lastSuffixIndex, lastSuffixButOneIndex;
 
-    var languages = [
-        "C#",
-        "CSS",
-        "HTML",
-        "JAVA",
-        "JS",
-        "PYTHON",
-        "SQL"
-    ]
-
-    var people = [
-        "BEN",
-        "DREW",
-        "EDWARD",
-        "GARETH",
-        "HARRY",
-        "JIM",
-        "LIAM",
-        "LIZ",
-        "KEIRAN",
-        "SIMON",
-        "US"
-    ];
-
     function showText(target, message, index, maxInterval) {
         if (index < message.length) {
             $(target).append(message[index++]);
@@ -61,7 +37,6 @@ $(function () {
         }, intervalChangeText);
     }
 
-    var suffixOptions = people;
     currentSuffixIndex = lastSuffixIndex = lastSuffixButOneIndex = suffixOptions.length - 1;
     showSuffix("#suffix", suffixOptions, intervalChangeText);
 })

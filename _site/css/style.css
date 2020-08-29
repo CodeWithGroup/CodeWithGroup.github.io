@@ -7,6 +7,7 @@
     --colour-dark-secondary: #00793c;
     --colour-light-primary: #009545;
     --colour-light-secondary: #00b050;
+    --colour-light-highlight: #adffd2;
     --colour-black: #000000;
     --colour-white: #f8f8f8;
 }
@@ -15,11 +16,11 @@
 a,
 a:focus,
 a:hover {
+    text-decoration: solid underline;
     color: var(--colour-light-primary);
 }
 
 a, a:focus {
-    text-decoration: dotted underline;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -29,7 +30,6 @@ a, a:focus {
 
 a:hover {
     font-size: 105%;
-    text-decoration: solid underline;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -46,6 +46,32 @@ a:hover {
     /* Prevent inheritence from `body` */
     background-color: var(--colour-white);
     border: 1px solid var(--colour-white);
+}
+
+.btn-primary,
+.btn-primary.focus, .btn-primary:focus
+ {
+    color: #fff;
+    background-color: var(--colour-light-primary);
+    border-color: var(--colour-light-secondary);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: var(--colour-light-primary);
+    border-color: var(--colour-light-secondary);
+    box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
+}
+
+.btn-primary.hover, .btn-primary:hover
+{
+    color: #fff;
+    background-color: var(--colour-light-primary);
+    border-color: var(--colour-light-secondary);
+    box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
 }
 
 /* Base styles */
@@ -113,7 +139,7 @@ hr {
 
 iframe {
     width: 100%;
-    height: 68vh;
+    height: 300vh;
 }
 
 .center-when-small {
@@ -196,6 +222,10 @@ iframe {
     padding: 1em;
 }
 
+.badge {
+    font-family: Roboto, sans-serif;
+}
+
 /* Scroll bar */
 
 ::-webkit-scrollbar {
@@ -252,7 +282,7 @@ iframe {
 
 .main-logo-title {
     text-align: center;
-    width: 100%;
+    width: 92%;
 }
 
 .main-logo-title h1 {
@@ -270,6 +300,41 @@ iframe {
 
 .main-logo-title-border-bottom {
     border-bottom: thin solid var(--colour-white);
+}
+
+/* Events */
+section#events .card {
+    margin: 0.5em 0.5em 0.5em -0.5em
+}
+
+div.event-date {
+    padding-top: 0.3em;
+    font-size: x-large;
+}
+
+span.event-date-month {
+    color: red;
+}
+
+span.event-date-day {
+    color: initial;
+}
+
+span.event-title {
+    font-family: 'Boogaloo';
+    font-size: xx-large;
+}
+
+span.event-title {
+    font-size: xx-large;
+}
+
+div.event-description {
+    padding-top: 0.6em;
+}
+
+div.event-book-button {
+    padding-top: 1em;
 }
 
 /* Twitter */
@@ -333,40 +398,8 @@ iframe {
     .cover-container {
         width: 700px;
     }
-}
 
-/* RESIZING (max-width) */
-
-/* Event page Google calendar */
-
-@media only screen and (max-width: 1200px)
-{
-    iframe.calendar-resize {
-        width: 930px;
-    }
-}
-
-@media only screen and (max-width: 992px)
-{
-    iframe.calendar-resize {
-        width: 690px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    iframe.calendar-resize {
-        width: 510px;
-    }
-}
-
-@media only screen and (max-width: 560px) {
-    iframe.calendar-resize {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    iframe.calendar-resize {
-        width: 320px;
+    span#small-screen-break {
+        display: none;
     }
 }
