@@ -57,6 +57,8 @@ var Languages = [
     "SQL"
 ];
 
+var People = people;
+
 var Resources = [
     "ANDROIDSTUDIO",
     "IDLE",
