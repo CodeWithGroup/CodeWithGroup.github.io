@@ -48,12 +48,12 @@ a:hover {
     border: 1px solid var(--colour-white);
 }
 
-.btn-primary,
-.btn-primary.focus, .btn-primary:focus
+.btn-primary
  {
     color: #fff;
     background-color: var(--colour-light-primary);
     border-color: var(--colour-light-secondary);
+    box-shadow: none;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -66,12 +66,21 @@ a:hover {
     box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
 }
 
-.btn-primary.hover, .btn-primary:hover
+.btn-primary.hover, .btn-primary:hover,
+.btn-primary.focus, .btn-primary:focus
 {
     color: #fff;
     background-color: var(--colour-light-primary);
     border-color: var(--colour-light-secondary);
     box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
+}
+
+input#mc-embedded-subscribe, input.btn {
+    margin: 0;
+}
+
+#mc_embed_signup input.btn {
+    border: 1px solid transparent !important;
 }
 
 /* Base styles */
@@ -144,6 +153,10 @@ iframe {
 
 .center-when-small {
     text-align: center;
+}
+
+.text-green {
+    color: var(--colour-light-primary);
 }
 
 /* Page Wrapper */
@@ -326,6 +339,11 @@ div.event-description {
 
 div.event-book-button {
     padding-top: 1em;
+}
+
+/* Contact */
+.contact-method-label {
+    width: 7.5em;
 }
 
 /* Twitter */
