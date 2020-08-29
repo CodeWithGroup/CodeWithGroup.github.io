@@ -1,0 +1,30 @@
+---
+title: Contact
+layout: default
+---
+
+<h1>{{page.title}}</h1>
+
+<p>
+
+</p>
+
+<p>
+    If you have any questions about joining us at code with you can chat to us now through Facebook by clicking the below button.
+    You can chat to us without a facebook account by clicking on the guest option.
+</p>
+
+<p>
+    <button class="btn btn-primary" id="chat-now">Chat Now!</button>
+</p>
+
+<p>
+    We are also available over email at <a href="mail:codewithgroup@gmail.com">codewithgroup@gmail.com</a>.
+</p>
+
+<script>
+    let chatButton = document.getElementById('chat-now');
+    chatButton.onclick = function (){
+        FB.CustomerChat.show(true)
+    }
+</script>
