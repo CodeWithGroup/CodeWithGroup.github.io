@@ -17,7 +17,8 @@ a,
 a:focus,
 a:hover {
     text-decoration: solid underline;
-    color: var(--colour-light-primary);
+    /* color: var(--colour-light-primary); */
+    color: brown;
 }
 
 a, a:focus {
@@ -29,12 +30,19 @@ a, a:focus {
 }
 
 a:hover {
-    font-size: 105%;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+.sidebar-dropdown > a:hover {
+    font-size: 105%;
+}
+
+.intro-icon > a:hover {
+    font-size: 115%;
 }
 
 /* Custom default button */
@@ -296,6 +304,23 @@ iframe {
     border-bottom: thin solid var(--colour-white);
 }
 
+/* Home */
+div.row.intro {
+    margin: 2em 0;
+}
+
+p.intro-icon {
+    color: var(--colour-dark-primary);
+}
+
+/* p.intro-icon > a {
+    color: var(--colour-dark-primary);
+} */
+
+p.intro-text {
+    font-size: large;
+}
+
 /* About */
 img.profile-photo {
     width: 100%;
@@ -393,6 +418,7 @@ div.event-book-button {
 @media screen and (min-width: 768px) {
     .page-wrapper.toggled .page-content {
         padding-left: 340px;
+        padding-right: 40px;
     }
 
     .page-wrapper.toggled .main-logo {
