@@ -5,6 +5,14 @@
     var orderComplete = function () {
         console.log('Order complete!');
     };
+    /* Programming 101 */
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '117920085149',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-117920085149',
+        onOrderComplete: orderComplete
+    });
 
     /* Databases 101 */
     window.EBWidgets.createWidget({
@@ -50,5 +58,5 @@
         modalTriggerElementId: 'eventbrite-widget-modal-trigger-117832864269',
         onOrderComplete: orderComplete
     });
-    
+
 </script>
