@@ -153,6 +153,37 @@
             <div class="row">
                 <div class="col-sm-4 col-lg-2 event-date">
                     <span class="event-date-month">SEP</span>
+                    <span class="event-date-day">14</span>
+                </div>
+                <div class="col-sm-8 col-lg-10 event-title">
+                    <span class="event-title">Programming 101</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-9 event-description">
+                    <span class="event-description">
+                        Programming 101 aims to introduce people to the basic principles common to all programming languages.
+                    </span>
+                </div>
+                <div class="col-md-12 col-lg-3 event-book-button">
+                    <!-- Noscript content for added SEO -->
+                    <noscript><a href="https://www.eventbrite.co.uk/e/programming-101-tickets-117920085149"
+                            rel="noopener noreferrer" target="_blank"></noscript>
+                    <!-- You can customize this button any way you like -->
+                    <button id="eventbrite-widget-modal-trigger-117920085149" class="btn btn-primary float-right"
+                        type="button">Register</button>
+                    <noscript></a>Register for tickets on Eventbrite</noscript>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row card">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-sm-4 col-lg-2 event-date">
+                    <span class="event-date-month">SEP</span>
                     <span class="event-date-day">15</span>
                 </div>
                 <div class="col-sm-8 col-lg-10 event-title">
@@ -173,7 +204,7 @@
                     <!-- You can customize this button any way you like -->
                     <button id="eventbrite-widget-modal-trigger-117562278941" class="btn btn-primary float-right"
                         type="button">Register</button>
-                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                    <noscript></a>Register for tickets on Eventbrite</noscript>
                 </div>
             </div>
         </div>
@@ -204,7 +235,7 @@
                     <!-- You can customize this button any way you like -->
                     <button id="eventbrite-widget-modal-trigger-117832786035" class="btn btn-primary float-right"
                         type="button">Register</button>
-                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                    <noscript></a>Register for tickets on Eventbrite</noscript>
                 </div>
             </div>
         </div>
@@ -235,7 +266,7 @@
                     <!-- You can customize this button any way you like -->
                     <button id="eventbrite-widget-modal-trigger-117920634793" class="btn btn-primary float-right"
                         type="button">Register</button>
-                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                    <noscript></a>Register for tickets on Eventbrite</noscript>
                 </div>
             </div>
         </div>
@@ -267,7 +298,7 @@
                     <!-- You can customize this button any way you like -->
                     <button id="eventbrite-widget-modal-trigger-117920303803" class="btn btn-primary float-right"
                         type="button">Register</button>
-                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                    <noscript></a>Register for tickets on Eventbrite</noscript>
                 </div>
             </div>
         </div>
@@ -298,7 +329,7 @@
                     <!-- You can customize this button any way you like -->
                     <button id="eventbrite-widget-modal-trigger-117832864269" class="btn btn-primary float-right"
                         type="button">Register</button>
-                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                    <noscript></a>Register for tickets on Eventbrite</noscript>
                     </script>
                 </div>
             </div>
@@ -313,6 +344,14 @@
     var orderComplete = function () {
         console.log('Order complete!');
     };
+    /* Programming 101 */
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '117920085149',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-117920085149',
+        onOrderComplete: orderComplete
+    });
 
     /* Databases 101 */
     window.EBWidgets.createWidget({
@@ -358,7 +397,7 @@
         modalTriggerElementId: 'eventbrite-widget-modal-trigger-117832864269',
         onOrderComplete: orderComplete
     });
-    
+
 </script>
                 </div>
             </div>
