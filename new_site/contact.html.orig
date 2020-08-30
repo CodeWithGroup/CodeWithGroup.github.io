@@ -137,7 +137,7 @@
             <a name="top"></a>
             <div class="row">
                 <div class="main-logo">
-                    <img src="./images/keyboard-green.png">
+                    <a href="index.html"><img src="./images/keyboard-green.png"></a>
                 </div>
                 <div class="main-logo-title">
                     <h1 class="cover-heading">CODEWITH<span id="small-screen-break"><br /></span><span id="suffix" class="typed-suffix">US</span></h1>
