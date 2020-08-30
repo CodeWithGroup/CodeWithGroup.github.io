@@ -342,7 +342,7 @@ div.event-date {
 }
 
 span.event-date-month {
-    color: red;
+    color: var(--colour-light-primary);
 }
 
 span.event-date-day {
