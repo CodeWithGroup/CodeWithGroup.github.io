@@ -1,0 +1,440 @@
+/*
+ * Globals
+ */
+
+:root {
+    --colour-dark-primary: #1f5237;
+    --colour-dark-secondary: #00793c;
+    --colour-light-primary: #009545;
+    --colour-light-secondary: #00b050;
+    --colour-light-highlight: #adffd2;
+    --colour-black: #000000;
+    --colour-white: #f8f8f8;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    text-decoration: solid underline;
+    /* color: var(--colour-light-primary); */
+    color: brown;
+}
+
+a, a:focus {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.sidebar-dropdown > a:hover {
+    font-size: 105%;
+}
+
+.intro-icon > a:hover {
+    font-size: 115%;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none;
+    /* Prevent inheritence from `body` */
+    background-color: var(--colour-white);
+    border: 1px solid var(--colour-white);
+}
+
+.btn-primary
+ {
+    color: #fff;
+    background-color: var(--colour-light-primary);
+    border-color: var(--colour-light-secondary);
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: var(--colour-light-primary);
+    border-color: var(--colour-light-secondary);
+    box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
+}
+
+.btn-primary.hover, .btn-primary:hover,
+.btn-primary.focus, .btn-primary:focus
+{
+    color: #fff;
+    background-color: var(--colour-light-primary);
+    border-color: var(--colour-light-secondary);
+    box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
+}
+
+input#mc-embedded-subscribe, input.btn {
+    margin: 0;
+}
+
+#mc_embed_signup input.btn {
+    border: 1px solid transparent !important;
+}
+
+/* Base styles */
+html,
+body {
+    background-color: var(--colour-white);
+    height: 100%;
+}
+
+body {
+    color: var(--colour-black);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+body.open-dyslexic {
+    color: var(--colour-black);
+    font-family: 'opendyslexicregular';
+    font-weight: 400;
+    text-align: left;
+}
+
+body.landing-page {
+    background-color: var(--colour-dark-secondary);
+}
+
+nav {
+    background-color: var(--colour-white);
+    height: 100%;
+}
+
+nav#sidebar {
+    background-color: var(--colour-dark-primary);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--colour-light-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Boogaloo';
+}
+
+.open-dyslexic h1,
+.open-dyslexic h2,
+.open-dyslexic h3,
+.open-dyslexic h4,
+.open-dyslexic h5,
+.open-dyslexic h6 {
+    font-family: 'opendyslexicregular';
+}
+
+hr {
+    border: 1px solid var(--colour-white);
+    margin: 0 0 0.5em 0;
+}
+
+iframe {
+    width: 100%;
+    height: 300vh;
+}
+
+.center-when-small {
+    text-align: center;
+}
+
+.text-green {
+    color: var(--colour-light-primary);
+}
+
+/* Page Wrapper */
+
+.page-wrapper {
+    height: 100vh;
+}
+
+.page-wrapper .theme {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+/* Sidebar Toggle */
+
+.page-wrapper.toggled .sidebar-wrapper {
+    left: 0px;
+}
+
+.page-wrapper .main-logo {
+    display: initial;
+    text-align: center;
+    width: 100%;
+}
+
+.page-wrapper .page-content {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 40px;
+}
+
+.page-wrapper .page-content>div {
+    padding: 20px 1em 18px 2em;
+}
+
+.page-wrapper .page-content>div.unpadded {
+    padding: 0 1em;
+}
+
+.page-wrapper .page-content {
+    overflow-x: hidden;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+/* Activity and resource cards */
+
+.card {
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.badge {
+    font-family: Roboto, sans-serif;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #525965;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #525965;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #525965;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* Logo */
+
+.main-logo {
+    padding-right: 1em;
+}
+
+.main-logo img {
+    height: 48pt;
+}
+
+.main-logo-title {
+    text-align: center;
+    width: 92%;
+}
+
+.main-logo-title h1 {
+    color: var(--colour-black);
+    font-family: "Boogaloo";
+    font-size: 36pt;
+    letter-spacing: -0.05em;
+    margin-top: 4px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+.main-logo-title h1 .typed-suffix {
+    color: var(--colour-light-secondary);
+}
+
+.main-logo-title-border-bottom {
+    border-bottom: thin solid var(--colour-white);
+}
+
+/* Home */
+div.row.intro {
+    margin: 2em 0;
+}
+
+p.intro-icon {
+    color: var(--colour-dark-primary);
+}
+
+/* p.intro-icon > a {
+    color: var(--colour-dark-primary);
+} */
+
+p.intro-text {
+    font-size: large;
+}
+
+/* About */
+img.profile-photo {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.committee-photos img.profile-photo {
+    border-radius: 5px;
+}
+
+/* Events */
+section#events .card {
+    margin: 0.5em 0.5em 0.5em -0.5em
+}
+
+div.event-date {
+    padding-top: 0.3em;
+    font-size: x-large;
+}
+
+span.event-date-month {
+    color: red;
+}
+
+span.event-date-day {
+    color: initial;
+}
+
+span.event-title {
+    font-family: 'Boogaloo';
+    font-size: xx-large;
+}
+
+span.event-title {
+    font-size: xx-large;
+}
+
+div.event-description {
+    padding-top: 0.6em;
+}
+
+div.event-book-button {
+    padding-top: 1em;
+}
+
+/* Contact */
+.contact-method-label {
+    width: 7.5em;
+}
+
+/* Twitter */
+
+#twitterButton i {
+    font-size: 1.2em;
+}
+
+/* RESIZING (min-width) */
+ 
+@media (min-width: 526px) {
+    .page-wrapper .main-logo {
+        display: initial;
+        text-align: left;
+        width: initial;
+    }
+
+    .page-wrapper .main-logo-title {
+        text-align: left;
+        width: initial;
+    }
+
+    .main-logo-title h1 {
+        color: var(--colour-black);
+        font-family: "Boogaloo";
+        font-size: 48pt;
+        letter-spacing: 0.05em;
+        margin-top: -5px;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    }
+}
+
+@media (min-width: 576px) {
+    .center-when-small {
+        text-align: left;
+    }
+
+    .logo-col {
+        width: 120px;
+    }
+
+    span#small-screen-break {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-wrapper.toggled .page-content {
+        padding-left: 340px;
+        padding-right: 40px;
+    }
+
+    .page-wrapper.toggled .main-logo {
+        display: none;
+    }
+
+    hr {
+        border: 1px solid var(--colour-white);
+        margin: 0 8em 0.5em 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 700px;
+    }
+}
