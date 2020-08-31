@@ -18,3 +18,6 @@ It's all free, so if you're in the area please come along!
     * Things you can help with
 
 If you need any help, contact one of the pople who have already added themselves.
+
+Copy the includes code `<br />
+{% include_relative pages-people/people-yourname.html %}` to the bottom of people.html (ensure you update the file name)
