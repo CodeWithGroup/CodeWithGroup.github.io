@@ -377,6 +377,12 @@ div.event-book-button {
     font-size: 1.2em;
 }
 
+/* Branding */
+.white-asset {
+    background-color: var(--colour-dark-primary);
+    color: var(--colour-white);
+}
+
 /* RESIZING (min-width) */
  
 @media (min-width: 526px) {
