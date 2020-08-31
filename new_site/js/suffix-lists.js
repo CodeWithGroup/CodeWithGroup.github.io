@@ -57,7 +57,11 @@ var Languages = [
     "SQL"
 ];
 
-var People = people;
+var People = [
+    "Drew",
+    "Keiran",
+    "Us"
+];
 
 var Resources = [
     "AndroidStudio",
