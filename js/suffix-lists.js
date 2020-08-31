@@ -77,3 +77,11 @@ var Branding = [
     "Colours",
     "Logos"
 ]
+
+var Code = [
+    "Inclusivity",
+    "Kindness",
+    "Safety",
+    "Equality",
+    "Respect"
+]
