@@ -52,7 +52,7 @@ It may be appropriate for a recruitment company to sponsor refreshments and do a
 
 If you are being harassed or feel uncomfortable, notice that someone else is being harassed, or have any other concerns, please speak to the event organiser(s) immediately. You can also contact the event organiser through Meetup and Slack.
 
-If you are not able to to do this or you feel that your concern is not being taken seriously then please contact the Equity Officer. This is currently Simon Davey, who can be reached through Slack or by email (simonr.davey@gmail.com).
+If you are not able to to do this or you feel that your concern is not being taken seriously then please contact the Equity Officer. This is currently Simon Davey, who can be reached through Slack or by email ([simonr.davey@gmail.com](mailto:simonr.davey@gmail.com)).
 
 CodeWith is here to listen to your concerns or questions and you don’t have to make a formal report unless you want to. You do not have to give us details of the harassment.
 
@@ -81,4 +81,4 @@ This document was based on the [Sheffield Digital Code of Conduct](https://sheff
 Licensed under a Creative Commons Attribution 3.0 Unported License.
 Version 1
 
-This is version 1 of the CodeWith Code of Conduct. It was last updated by Simon Davey on 31 August 2020. If you think we have made any errors or omissions, please contact us by email (contact@codewith.org.uk) or via the [contact form](contact.html).
+This is version 1 of the CodeWith Code of Conduct. It was last updated by Simon Davey on 31 August 2020. If you think we have made any errors or omissions, please contact us by email ([contact@codewith.org.uk](mailto:contact@codewith.org.uk)) or via the [contact form](contact.html).
