@@ -71,3 +71,9 @@ var Resources = [
     "GOOGLEFONTS",
     "REPL"
 ];
+
+var Branding = [
+    "Fonts",
+    "Colours",
+    "Logos"
+]
