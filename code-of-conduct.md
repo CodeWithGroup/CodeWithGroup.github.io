@@ -81,4 +81,4 @@ This document was based on the [Sheffield Digital Code of Conduct](https://sheff
 Licensed under a Creative Commons Attribution 3.0 Unported License.
 Version 1
 
-This is version 1 of the CodeWith Code of Conduct. It was last updated by Simon Davey on 31 August 2020. If you think we have made any errors or omissions, please contact us by email ([contact@codewith.org.uk](mailto:contact@codewith.org.uk)) or via the [contact form](contact.html).
+This is version 1 of the CodeWith Code of Conduct. It was last updated by Simon Davey on 31 August 2020. If you think we have made any errors or omissions, please contact us by email ([contact@codewith.org.uk](mailto:contact@codewith.org.uk)) or through one of the communication channels listed on the [contact page](contact.html).
