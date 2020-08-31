@@ -356,7 +356,12 @@ span.event-date-month {
 span.event-date-day {
     color: initial;
 }
-
+span.event-date-start-time {
+    color: initial;
+}
+span.event-date-end-time {
+    color: initial;
+}
 span.event-title {
     font-family: 'Boogaloo';
     font-size: xx-large;
