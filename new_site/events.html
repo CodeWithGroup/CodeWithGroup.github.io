@@ -45,13 +45,14 @@
         <!-- I know scripts aren't supposed to go in the header, but we need this here in order to pick different suffix lists for the typewriter at the top -->
         <script src="./js/suffix-lists.js"></script>
         <script lang="javascript">
-            var suffixOptions = Events;
+            var suffixOptions = eval("Events".split(" ")[0]).map(function(x) { return x.toUpperCase(); });
         </script>
 
     </head>
 
 
 <body>
+    <a class="sr-only sr-only-focusable" href="#page-content">Skip to main content</a>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPSF3G7"
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -106,6 +107,12 @@
                     </a>
                 </li>
                 <li class="sidebar-dropdown">
+                    <a href="branding.html">
+                        <i class="fas fa-palette"></i>
+                        <span>Branding</span>
+                    </a>
+                </li>
+                <li class="sidebar-dropdown">
                     <a href="people.html">
                         <i class="fa fa-users"></i>
                         <span>People</span>
@@ -133,8 +140,7 @@
         </div>
     </div>
 </nav>
-        <main role="main" class="page-content">
-            <a name="top"></a>
+        <main role="main" class="page-content" id="page-content">
             <div class="row">
                 <div class="main-logo">
                     <a href="index.html"><img src="./images/keyboard-green.png"></a>
@@ -147,6 +153,56 @@
                 <div class="col-lg-10">
                     <h1>Events</h1>
 
+<p>CodeWith mentors run drop-in sessions and workshops; you can read more about the sessions below.</p>
+
+<p>Before attending any CodeWith event, please read our <a href="code-of-conduct.html">Code of Conduct</a>, which applies to all events we run. All
+    attendees, speakers, and mentors must agree with this code of conduct. It helps us all to understand the 
+    community&apos;s shared values and provides clear guidelines on how we should behave.</p>
+
+<h2>Drop-in sessions</h2>
+<p>
+    Drop-in sessions are hosted by at least one mentor and run regularly in the evenings.
+    You can get help on our <a href="https://codewithpeople.slack.com">Slack Workspace</a>
+    or, if it's a really tricky problem, we can always jump into a Jitsi meeting with you.
+</p>
+<p>
+    Jitsi links for regularly-scheduled sessions will be added to the web site a little
+    before each drop-in event, so check back here to join via the 'Jitsi Link' button.
+</p>
+<section id="events">
+    <div class="row card">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-sm-4 col-lg-2 event-date">
+                    <span class="event-date-month"></span>
+                    <span class="event-date-day">TBC</span>
+                    <p>
+                        <span class="event-date-start-time">7pm - </span>
+
+                        <span class="event-date-end-time">9pm</span>
+                    </p>
+                </div>
+                <div class="col-sm-8 col-lg-10 event-title">
+                    <span class="event-title">National Coding Week</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-9 event-description">
+                    <span class="event-description">
+                        A drop in for anyone who would like help with coding. This can be something related to one of
+                        our workshops or anything else! </span>
+                </div>
+                <div class="col-md-12 col-lg-3 event-book-button">
+                    <button class="btn btn-primary float-right" type="button">Jitsi Link <span
+                            class="fas fa-link"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<h2>Scheduled Workshops</h2>
+
 <section id="events">
     <div class="row card">
         <div class="col-12">
@@ -154,6 +210,11 @@
                 <div class="col-sm-4 col-lg-2 event-date">
                     <span class="event-date-month">SEP</span>
                     <span class="event-date-day">14</span>
+                    <p>
+                        <span class="event-date-start-time">6pm - </span>
+                        
+                        <span class="event-date-end-time">8pm</span>
+                    </p>
                 </div>
                 <div class="col-sm-8 col-lg-10 event-title">
                     <span class="event-title">Programming 101</span>
@@ -185,6 +246,11 @@
                 <div class="col-sm-4 col-lg-2 event-date">
                     <span class="event-date-month">SEP</span>
                     <span class="event-date-day">15</span>
+                    <p>
+                        <span class="event-date-start-time">6pm - </span>
+                        
+                        <span class="event-date-end-time">8pm</span>
+                    </p>
                 </div>
                 <div class="col-sm-8 col-lg-10 event-title">
                     <span class="event-title">Databases 101</span>
@@ -216,6 +282,11 @@
                 <div class="col-sm-4 col-lg-2 event-date">
                     <span class="event-date-month">SEP</span>
                     <span class="event-date-day">16</span>
+                    <p>
+                        <span class="event-date-start-time">6pm - </span>
+                        
+                        <span class="event-date-end-time">8pm</span>
+                    </p>
                 </div>
                 <div class="col-sm-8 col-lg-10 event-title">
                     <span class="event-title">Containers 101 - Docker</span>
@@ -247,6 +318,11 @@
                 <div class="col-sm-4 col-lg-2 event-date">
                     <span class="event-date-month">SEP</span>
                     <span class="event-date-day">16</span>
+                    <p>
+                        <span class="event-date-start-time">7pm - </span>
+                        
+                        <span class="event-date-end-time">9pm</span>
+                    </p>
                 </div>
                 <div class="col-sm-8 col-lg-10 event-title">
                     <span class="event-title">Just Git Started</span>
@@ -278,6 +354,11 @@
                 <div class="col-sm-4 col-lg-2 event-date">
                     <span class="event-date-month">SEP</span>
                     <span class="event-date-day">17</span>
+                    <p>
+                        <span class="event-date-start-time">6pm - </span>
+                        
+                        <span class="event-date-end-time">8pm</span>
+                    </p>
                 </div>
                 <div class="col-sm-8 col-lg-10 event-title">
                     <span class="event-title">SQL Walkthrough</span>
@@ -310,6 +391,11 @@
                 <div class="col-sm-4 col-lg-2 event-date">
                     <span class="event-date-month">SEP</span>
                     <span class="event-date-day">18</span>
+                    <p>
+                        <span class="event-date-start-time">6pm - </span>
+                        
+                        <span class="event-date-end-time">8pm</span>
+                    </p>
                 </div>
                 <div class="col-sm-8 col-lg-10 event-title">
                     <span class="event-title">Containers 102 - Kubernetes</span>
@@ -336,7 +422,6 @@
         </div>
     </div>
 </section>
-
 <!-- EventBrite Integration -->
 <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
@@ -399,6 +484,7 @@
     });
 
 </script>
+
                 </div>
             </div>
             <div class="row unpadded">

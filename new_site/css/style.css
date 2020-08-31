@@ -45,6 +45,14 @@ a:hover {
     font-size: 115%;
 }
 
+a.sr-only-focusable[href="#page-content"]:focus {
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    top: 0.5em;
+    transition: none;
+}
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -348,7 +356,15 @@ span.event-date-month {
 span.event-date-day {
     color: initial;
 }
+span.event-date-start-time {
+    color: initial;
+    font-size:large
+}
+span.event-date-end-time {
+    color: initial;
+    font-size:large
 
+}
 span.event-title {
     font-family: 'Boogaloo';
     font-size: xx-large;
@@ -375,6 +391,12 @@ div.event-book-button {
 
 #twitterButton i {
     font-size: 1.2em;
+}
+
+/* Branding */
+.white-asset {
+    background-color: var(--colour-dark-primary);
+    color: var(--colour-white);
 }
 
 /* RESIZING (min-width) */
