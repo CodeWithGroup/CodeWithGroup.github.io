@@ -45,6 +45,14 @@ a:hover {
     font-size: 115%;
 }
 
+a.sr-only-focusable[href="#page-content"]:focus {
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    top: 0.5em;
+    transition: none;
+}
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,

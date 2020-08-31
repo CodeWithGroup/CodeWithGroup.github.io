@@ -3,6 +3,7 @@
 {% include head.html %}
 
 <body>
+    <a class="sr-only sr-only-focusable" href="#page-content">Skip to main content</a>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPSF3G7"
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -10,8 +11,7 @@
 
     <div id="main-container" class="page-wrapper toggled">
         {% include sidebar.html %}
-        <main role="main" class="page-content">
-            <a name="top"></a>
+        <main role="main" class="page-content" id="page-content">
             <div class="row">
                 <div class="main-logo">
                     <a href="index.html"><img src="./images/keyboard-green.png"></a>
