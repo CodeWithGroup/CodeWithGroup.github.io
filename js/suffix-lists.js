@@ -1,48 +1,48 @@
 "use strict"
 
 var people = [
-    "BEN",
-    "DREW",
-    "EDWARD",
-    "GARETH",
-    "HARRY",
-    "JIM",
-    "LIAM",
-    "LIZ",
-    "KEIRAN",
-    "SIMON",
-    "US"
+    "Ben",
+    "Drew",
+    "Edward",
+    "Gareth",
+    "Harry",
+    "Jim",
+    "Liam",
+    "Liz",
+    "Keiran",
+    "Simon",
+    "Us"
 ];
 
 var About = people;
 
 var Activities = [
-    "CODECADEMY",
-    "CODECOMBAT",
-    "CSSDINER",
-    "CSSTRICKS",
-    "FREECODECAMP",
-    "GIT",
-    "JAVASCRIPT",
-    "UDEMY",
-    "#100DAYSOFCODE",
-    "ADVENTOFCODE",
-    "BOX-256",
-    "CODEWARS",
-    "CODINGAME",
-    "EDABIT",
-    "REDDIT",
-    "JUPYTER"
+    "codecademy",
+    "CodeCombat",
+    "CSSDiner",
+    "CSSTricks",
+    "FreeCodeCamp",
+    "git",
+    "Javascript",
+    "Udemy",
+    "#100DaysOfCode",
+    "AdventOfCode",
+    "Box-256",
+    "CodeWars",
+    "CodinGame",
+    "Edabit",
+    "Reddit",
+    "Jupyter"
 ];
 
 var Contact = people;
 
 var Events = [
-    "DATABASES",
-    "DOCKER",
-    "GIT",
+    "Databases",
+    "Docker",
+    "Git",
     "SQL",
-    "KUBERNETES"
+    "Kubernetes"
 ];
 
 var Home = people;
@@ -51,25 +51,25 @@ var Languages = [
     "C#",
     "CSS",
     "HTML",
-    "JAVA",
-    "JS",
-    "PYTHON",
+    "Java",
+    "Javascript",
+    "Python",
     "SQL"
 ];
 
 var People = people;
 
 var Resources = [
-    "ANDROIDSTUDIO",
+    "AndroidStudio",
     "IDLE",
-    "INTELLIJ",
-    "VISUALSTUDIO",
-    "VSCODE",
-    "COOLORS",
-    "CODEPEN",
-    "FONTAWESOME",
-    "GOOGLEFONTS",
-    "REPL"
+    "IntelliJ",
+    "VisualStudio",
+    "VSCode",
+    "Coolors",
+    "CodePen",
+    "FontAwesome",
+    "GoogleFonts",
+    "Repl"
 ];
 
 var Branding = [

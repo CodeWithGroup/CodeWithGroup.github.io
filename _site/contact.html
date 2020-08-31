@@ -45,7 +45,7 @@
         <!-- I know scripts aren't supposed to go in the header, but we need this here in order to pick different suffix lists for the typewriter at the top -->
         <script src="./js/suffix-lists.js"></script>
         <script lang="javascript">
-            var suffixOptions = Contact;
+            var suffixOptions = eval("Contact".split(" ")[0]).map(function(x) { return x.toUpperCase(); });
         </script>
 
     </head>
