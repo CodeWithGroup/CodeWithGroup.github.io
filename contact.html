@@ -1,0 +1,153 @@
+---
+title: Contact
+layout: default
+---
+
+<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+<h1>{{page.title}}</h1>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-11">
+                <h2>Email</h2>
+                <p>
+                    You can get in touch with us by email at <a target="_blank"
+                        href="mailto:contact@codewith.org.uk?subject=CodeWith Website Enquiry">contact@codewith.org.uk</a>.
+                </p>
+                <p>
+                    If you want to get the latest information and announcements from us you can also sign up to our
+                    mailing list
+                    using this form.
+                </p>
+
+                <div id="mc_embed_signup">
+                    <form
+                        action="https://codewith.us17.list-manage.com/subscribe/post?u=0d3589245b03faa48b04ea2c9&amp;id=c9c65dc28a"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                        target="_blank" novalidate style="padding: 0;">
+                        <div id="mc_embed_signup_scroll">
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME">First Name <span class="asterisk">*</span>
+                                </label>
+                                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-LNAME">Last Name <span class="asterisk">*</span>
+                                </label>
+                                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-TOWN">Town </label>
+                                <input type="text" value="" name="TOWN" class="" id="mce-TOWN">
+                            </div>
+                            
+                            <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+                                <div class="content__gdpr">
+                                    <label>Marketing Permissions</label>
+                                    <p>Please select all the ways you would like to hear from CodeWith:</p>
+                                    <fieldset class="mc_fieldset gdprRequired mc-field-group"
+                                        name="interestgroup_field">
+                                        <label class="checkbox subfield" for="gdpr_39820"><span>Email</span> </label>
+                                        <input type="checkbox" id="gdpr_39820" name="gdpr[39820]" value="Y"
+                                            class="av-checkbox gdpr" style="    width:5%;">
+                                    </fieldset>
+
+                                    <p>You can unsubscribe at any time by clicking the link in the footer of our emails.
+                                        We do not sell or give this information to third party companies.</p>
+                                </div>
+                                <div class="content__gdprLegal">
+                                    <p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you
+                                        acknowledge that your information will be transferred to Mailchimp for
+                                        processing. <a href="https://mailchimp.com/legal/" target="_blank">Learn more
+                                            about Mailchimp's privacy practices here.</a></p>
+                                </div>
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                    name="b_0d3589245b03faa48b04ea2c9_c9c65dc28a" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                    id="mc-embedded-subscribe" class="btn btn-primary"></div>
+                        </div>
+                    </form>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <h2>Social Media</h2>
+        <p>
+            We have plenty of other places you can get messages to us too.
+        </p>
+        <p>
+            <span class="fab fa-facebook text-green"></span>&nbsp;
+            <a target="_blank" href="https://www.facebook.com/CodeWithGroup">Facebook</a>
+        </p>
+        <p>
+            <span class="fab fa-linkedin text-green"></span>&nbsp;
+            <a target="_blank" href="https://www.linkedin.com/company/codewith">LinkedIn</a>
+        </p>
+        <p>
+            <span class="fab fa-slack text-green"></span>&nbsp;
+            <a target="_blank" href="https://codewithpeople.slack.com">Slack Workspace</a>
+        </p>
+        <p>
+            <span class="fab fa-slack text-green"></span>&nbsp;
+            <a target="_blank" href="https://Launchpass.com/codewithpeople">Slack Signup (Launchpass)</a>
+        </p>
+        <p>
+            <span class="fab fa-twitter text-green"></span>&nbsp;
+            <a target="_blank" href="https://twitter.com/CodeWithGroup">Twitter</a>
+        </p>
+        <p>
+            <span class="fas fa-calendar-alt text-green"></span>&nbsp;
+            <a target="_blank" href="https://www.eventbrite.co.uk/o/codewith-30834204055">Eventbrite</a>
+        </p>
+        
+        <p>
+            Alternatively, if you have any questions about CodeWith you can chat to us through Facebook
+            by clicking the below button. If you don't have a Facebook account you can use the guest option.
+        </p>
+        <p>
+            <button class="btn btn-primary" id="chat-now"><span class="fa fa-comments"></span> &nbsp; Chat Now!</button>
+        </p>
+    </div>
+</div>
+
+<script>
+    let chatButton = document.getElementById('chat-now');
+    chatButton.onclick = function () {
+        FB.CustomerChat.show(true)
+    }
+</script>
+
+<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+        (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+            fnames[3] = 'TOWN';
+            ftypes[3] = 'text';
+        }(jQuery));
+
+    var $mcj = jQuery.noConflict(true);
+</script>

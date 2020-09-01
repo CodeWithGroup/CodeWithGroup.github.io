@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+    <a class="sr-only sr-only-focusable" href="#page-content">Skip to main content</a>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPSF3G7"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="main-container" class="page-wrapper toggled">
+        {% include sidebar.html %}
+        <main role="main" class="page-content" id="page-content">
+            <div class="row">
+                <div class="main-logo">
+                    <a href="index.html"><img src="./images/keyboard-green.png"></a>
+                </div>
+                <div class="main-logo-title">
+                    <h1 class="cover-heading">CODEWITH<span id="small-screen-break"><br /></span><span id="suffix" class="typed-suffix">US</span></h1>
+                </div>
+            </div>
+            <div class="row unpadded">
+                <div class="col-lg-10">
+                    {{content}}
+                </div>
+            </div>
+            {% include back-to-top.html %}
+        </main>
+    </div>
+    {% include scripts.html %}
+</body>
+
+</html>
