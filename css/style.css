@@ -419,6 +419,20 @@ div.event-book-button {
     font-size: 1.2em;
 }
 
+/*FAQ*/
+
+.faq-question{
+    color:var(--colour-light-primary)
+}
+
+.faq-question:hover {
+    color:var(--colour-dark-primary)
+}
+
+.faq-question-card{
+    margin-left:0;
+}
+
 /* Branding */
 .white-asset {
     background-color: var(--colour-dark-primary);
