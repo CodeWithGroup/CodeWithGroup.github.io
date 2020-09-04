@@ -340,7 +340,7 @@ img.profile-photo {
 }
 
 /* Events */
-section#events .card {
+section#events-drop-ins .card, section#events-scheduled .card {
     margin: 0.5em 0.5em 0.5em -0.5em
 }
 
