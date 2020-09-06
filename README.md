@@ -21,3 +21,10 @@ If you need any help, contact one of the pople who have already added themselves
 
 Copy the includes code `<br />
 {% include_relative pages-people/people-yourname.html %}` to the bottom of people.html (ensure you update the file name)
+
+# Sitemap
+The site's sitemap is generated automatically on deployment 
+
+To avoid a page being indexed, e.g people pages that are included use the below snippet at the top of the page. 
+
+`sitemap: false`
