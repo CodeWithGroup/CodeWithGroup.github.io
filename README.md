@@ -23,8 +23,10 @@ Copy the includes code `<br />
 {% include_relative pages-people/people-yourname.html %}` to the bottom of people.html (ensure you update the file name)
 
 # Sitemap
-The site's sitemap is generated automatically on deployment 
+All pages not defined as a default in _config.yml are added to the sitemap
 
-To avoid a page being indexed, e.g people pages that are included use the below snippet at the top of the page. 
+To exclude a specific page use the snippet `sitemap:false` at the top of the page
 
-`sitemap: false`
+> :warning: **If you are including the page in another page (using `include_relative`)**: add the page as a default in `_config.yml` otherwise the `sitemap:false` is displayed as HTML on the page.
+
+All files in `_include` are excluded from the sitemap automatically
