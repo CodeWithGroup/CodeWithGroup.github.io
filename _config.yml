@@ -1,1 +1,4 @@
 name: CodeWith
+url: "https://codewith.org.uk" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
