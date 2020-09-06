@@ -28,3 +28,15 @@ The site's sitemap is generated automatically on deployment
 To avoid a page being indexed, e.g people pages that are included use the below snippet at the top of the page. 
 
 `sitemap: false`
+
+# Adding a page to the typed suffix functionality
+* Add a variable to the suffix-lists.js file with the first word of the page title. Assign the array you want to use to the variable. 
+
+e.g. 
+
+For a page named "Home"
+
+```javascript
+var Languages = ["Java","HTML"]
+var Home = Languages
+```

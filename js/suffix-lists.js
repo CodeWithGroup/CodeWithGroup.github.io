@@ -15,7 +15,6 @@ var people = [
 ];
 
 var About = people;
-
 var Activities = [
     "codecademy",
     "CodeCombat",
@@ -35,7 +34,6 @@ var Activities = [
     "Jupyter"
 ];
 
-var Contact = people;
 
 var Events = [
     "Databases",
@@ -56,6 +54,8 @@ var Languages = [
     "Python",
     "SQL"
 ];
+var Error = Languages
+
 
 var People = [
     "Drew",
