@@ -34,6 +34,7 @@ var Activities = [
     "Jupyter"
 ];
 
+var Contact = people;
 
 var Events = [
     "Databases",
