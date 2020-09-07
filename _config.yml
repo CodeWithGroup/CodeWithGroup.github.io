@@ -5,27 +5,27 @@ plugins:
 defaults:
 -
   scope:
-    path: 'pages-people'
+    path: 'pages-people/*'
   values:
     sitemap: false
 -
   scope:
-    path: 'pages-activities'
+    path: 'pages-activities/*'
   values:
     sitemap: false
 - 
   scope:
-    path: 'pages-resources'
+    path: 'pages-resources/*'
   values:
     sitemap: false
 -
   scope:
-    path: 'pages-events'
+    path: 'pages-events/*'
   values:
     sitemap: false
 
 -
   scope:
-    path: 'test_next_release'
+    path: 'test_next_release/*'
   values:
     sitemap: false
