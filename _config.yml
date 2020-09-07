@@ -23,3 +23,9 @@ defaults:
     path: 'pages-events/'
   values:
     sitemap: false
+
+-
+  scope:
+    path: 'test_next_release/'
+  values:
+    sitemap: false
