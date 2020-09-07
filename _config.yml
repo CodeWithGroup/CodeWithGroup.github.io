@@ -2,3 +2,30 @@ name: CodeWith
 url: "https://codewith.org.uk" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
+defaults:
+-
+  scope:
+    path: 'pages-people/*'
+  values:
+    sitemap: false
+-
+  scope:
+    path: 'pages-activities/*'
+  values:
+    sitemap: false
+- 
+  scope:
+    path: 'pages-resources/*'
+  values:
+    sitemap: false
+-
+  scope:
+    path: 'pages-events/*'
+  values:
+    sitemap: false
+
+-
+  scope:
+    path: 'test_next_release/*'
+  values:
+    sitemap: false
