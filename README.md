@@ -29,4 +29,13 @@ To exclude a specific page use the snippet `sitemap:false` at the top of the pag
 
 > :warning: **If you are including the page in another page (using `include_relative`)**: add the page as a default in `_config.yml` otherwise the `sitemap:false` is displayed as HTML on the page.
 
+## Example default to add to `_config.yml`
+```yml
+-
+  scope:
+    path: 'pages-people/*'
+  values:
+    sitemap: false
+```
+
 All files in `_include` are excluded from the sitemap automatically
