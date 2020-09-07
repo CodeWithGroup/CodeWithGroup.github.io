@@ -29,4 +29,24 @@ To exclude a specific page use the snippet `sitemap:false` at the top of the pag
 
 > :warning: **If you are including the page in another page (using `include_relative`)**: add the page as a default in `_config.yml` otherwise the `sitemap:false` is displayed as HTML on the page.
 
+## Example default to add to `_config.yml`
+```yml
+-
+  scope:
+    path: 'pages-people/*'
+  values:
+    sitemap: false
+```
+
 All files in `_include` are excluded from the sitemap automatically
+# Adding a page to the typed suffix functionality
+* Add a variable to the suffix-lists.js file with the first word of the page title. Assign the array you want to use to the variable. 
+
+e.g. 
+
+For a page named "Home"
+
+```javascript
+var Languages = ["Java","HTML"]
+var Home = Languages
+```
