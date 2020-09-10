@@ -57,6 +57,8 @@ To rebuild the site after a file chaneg append `--watch` to the end of the comma
 
 e,g. `jekyll build --watch`
 
+Once you have an `_site` folder open the `index.html` file inside to view the site.
+
 ## Includes
 
 Jeykll has functionality to include files, which this site makes extensive sue of. You can find the documentation for includes here: https://jekyllrb.com/docs/includes/
