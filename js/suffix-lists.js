@@ -44,7 +44,21 @@ var Events = [
     "Kubernetes"
 ];
 
-var Home = people;
+var benefits = [
+    "Confidence",
+    "Us",
+    "Support",
+    "Flexibility",
+    "Humour",
+    "Friends",
+    "Company",
+    "Fun",
+    "Mentoring",
+    "Success",
+    "Ambition",
+    "Direction",
+    "Understanding"
+];
 
 var Languages = [
     "C#",
@@ -81,7 +95,7 @@ var Branding = [
     "Fonts",
     "Colours",
     "Logos"
-]
+];
 
 var Code = [
     "Inclusivity",
@@ -89,4 +103,6 @@ var Code = [
     "Safety",
     "Equality",
     "Respect"
-]
+];
+
+var Home = [].concat(benefits, Code);
