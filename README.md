@@ -2,9 +2,11 @@
 This repository holds the code for CodeWith, a group in the UK that offers free coding help and tuition.
 
 # Our Event
-We run the event monthly and manage it all through 
-[our Slack group](https://www.slack.com/).
+We run events online and manage it all through 
+[our Slack group](https://www.codewith.org.uk/contact.html).
 It's all free, so if you're in the area please come along!
+
+You can see our current events at https://www.codewith.org.uk/events.html
 
 # Contributing to this repository
 ## Repository branches
@@ -17,7 +19,49 @@ Feature/* | New code being developed | Contributors
 
 ## Pull requests
 
+Please submit pull requests with useful descriptions, if you don't know how to use pull requests ask in [our Slack group](https://www.codewith.org.uk/contact.html).
+
+
 ## Testing 
+
+Testing is important for maintainers and contributors alike. Ensure all aspects of the site work as the did previously before submitting a pull request. 
+
+Things to look out for when testing
+
+* Responsive design - how does the page display on different devices, and different orientations.
+* Browser support - Test your changes in a few major browsers, are there any errors?
+
+Before pull requests are merged maintainers should test all aspects of the site. 
+
+# Getting started with this site and Jekyll
+
+## What is Jekyll?
+
+Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more.
+
+Quoted from https://jekyllrb.com/docs/
+
+## Jekyll setup
+
+Use [this guide](https://jekyllrb.com/docs/installation/) to setup Jekyll for your operating system.
+
+## Building the site
+
+Open a command line in the root directory of the repository
+
+Run `jekyll build` to build the site, this will produce a `_site` folder with the required content
+
+>:Warning: do not edit anything in the site folder as it will not be comitted and is overwritten everytime you build the site.
+
+To rebuild the site after a file chaneg append `--watch` to the end of the command. 
+
+e,g. `jekyll build --watch`
+
+## Includes
+
+Jeykll has functionality to include files, which this site makes extensive sue of. You can find the documentation for includes here: https://jekyllrb.com/docs/includes/
+
+# Useful guides
 
 ## To add yourself to the people page
 
@@ -40,7 +84,7 @@ All pages not defined as a default in _config.yml are added to the sitemap
 
 To exclude a specific page use the snippet `sitemap:false` at the top of the page
 
-> :warning: **If you are including the page in another page (using `include_relative`)**: add the page as a default in `_config.yml` otherwise the `sitemap:false` is displayed as HTML on the page.
+:warning: **If you are including the page in another page (using `include_relative`)**: add the page as a default in `_config.yml` otherwise the `sitemap:false` is displayed as HTML on the page.
 
 ### Example default to add to `_config.yml`
 ```yml
@@ -63,4 +107,7 @@ For a page named "Home"
 var Languages = ["Java","HTML"]
 var Home = Languages
 ```
+
+
+
 
