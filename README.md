@@ -6,7 +6,20 @@ We run the event monthly and manage it all through
 [our Slack group](https://www.slack.com/).
 It's all free, so if you're in the area please come along!
 
-# To add yourself to the people page
+# Contributing to this repository
+## Repository branches
+
+Branch | Purpose | Who can commit
+------------ | ------------- | ---------------
+Master | The **Live** branch, commits here will appear in the live website | Maintainers, only from the release branch
+Release | Tested code that is ready for the live website | Maintainers, via pull requests
+Feature/* | New code being developed | Contributors 
+
+## Pull requests
+
+## Testing 
+
+## To add yourself to the people page
 
 * Create a branch
 * Make a copy of one of the existing bios in *pages-people* 
@@ -22,14 +35,14 @@ If you need any help, contact one of the pople who have already added themselves
 Copy the includes code `<br />
 {% include_relative pages-people/people-yourname.html %}` to the bottom of people.html (ensure you update the file name)
 
-# Sitemap
+## Sitemap
 All pages not defined as a default in _config.yml are added to the sitemap
 
 To exclude a specific page use the snippet `sitemap:false` at the top of the page
 
 > :warning: **If you are including the page in another page (using `include_relative`)**: add the page as a default in `_config.yml` otherwise the `sitemap:false` is displayed as HTML on the page.
 
-## Example default to add to `_config.yml`
+### Example default to add to `_config.yml`
 ```yml
 -
   scope:
@@ -39,7 +52,7 @@ To exclude a specific page use the snippet `sitemap:false` at the top of the pag
 ```
 
 All files in `_include` are excluded from the sitemap automatically
-# Adding a page to the typed suffix functionality
+## Adding a page to the typed suffix functionality
 * Add a variable to the suffix-lists.js file with the first word of the page title. Assign the array you want to use to the variable. 
 
 e.g. 
@@ -50,3 +63,4 @@ For a page named "Home"
 var Languages = ["Java","HTML"]
 var Home = Languages
 ```
+
