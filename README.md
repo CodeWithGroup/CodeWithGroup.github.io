@@ -53,15 +53,15 @@ Run `jekyll build` to build the site, this will produce a `_site` folder with th
 
 >:Warning: do not edit anything in the site folder as it will not be comitted and is overwritten everytime you build the site.
 
-To rebuild the site after a file chaneg append `--watch` to the end of the command. 
+To rebuild the site after a file change append `--watch` to the end of the command. 
 
 e,g. `jekyll build --watch`
 
-Once you have an `_site` folder open the `index.html` file inside to view the site.
+Once you have a `_site` folder open the `index.html` file inside to view the site.
 
 ## Includes
 
-Jeykll has functionality to include files, which this site makes extensive sue of. You can find the documentation for includes here: https://jekyllrb.com/docs/includes/
+Jeykll has functionality to include files, which this site makes extensive use of. You can find the documentation for includes here: https://jekyllrb.com/docs/includes/
 
 # Useful guides
 
