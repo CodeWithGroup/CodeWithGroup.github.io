@@ -9,8 +9,8 @@ It's all free, so if you're in the area please come along!
 # To add yourself to the people page
 
 * Create a branch
-* Make a copy of one of the existing bios in *pages-people* 
-* Name it using the convention people-*yourname* 
+* Make a copy of one of the existing bios in *_data/people/*
+* Name it using the convention *yourname* 
 * Modify to be your bio including
     * Photograph
     * Information paragraph
@@ -18,9 +18,6 @@ It's all free, so if you're in the area please come along!
     * Things you can help with
 
 If you need any help, contact one of the pople who have already added themselves.
-
-Copy the includes code `<br />
-{% include_relative pages-people/people-yourname.html %}` to the bottom of people.html (ensure you update the file name)
 
 # Sitemap
 All pages not defined as a default in _config.yml are added to the sitemap
