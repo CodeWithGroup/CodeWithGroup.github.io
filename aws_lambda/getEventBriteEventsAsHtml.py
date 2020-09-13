@@ -16,7 +16,7 @@ def getEventBriteEventsAsHtml(event, lambda_context):
     response = session.get(
         url='https://www.eventbriteapi.com/v3/organizations/464103861019/events/',
         headers={
-            "Authorization": "Bearer X6NY5BM5UQ3RKQNGHRD3",
+            "Authorization": "Bearer <key>",
             "Content-Type": "application/json"
         }
     )
@@ -67,4 +67,4 @@ def getEventBriteEventsAsHtml(event, lambda_context):
                 .replace("`eventId`", eventId) \
                 .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
 
-    return {'content': content, 'widgets': widgets}
+    return {'statusCode': 200, 'content': content, 'widgets': widgets}
