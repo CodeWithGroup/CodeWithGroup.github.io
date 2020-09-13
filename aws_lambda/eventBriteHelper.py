@@ -11,7 +11,7 @@ headers = {
 organisationId = "464103861019"
 monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-eventTemplate = "<div class=\"row card\"><div class=\"col-12`eventClass`\"><div class=\"row\"><div class=\"col-sm-4 col-lg-2 event-date\"><span class=\"event-date-month\">`month`</span> <span class=\"event-date-day\">`day`</span><p><span class=\"event-date-start-time\">`eventStart``eventStartAmPm` - </span><span class=\"event-date-end-time\">`eventEnd``eventEndAmPm`</span></p></div><div class=\"col-sm-8 col-lg-10 event-title\"><span class=\"event-title\">`eventName`</span></div></div><div class=\"row\"><div class=\"col-md-12 col-lg-9 event-description\"><span class=\"event-description\">`eventDescription`</span></div><div class=\"col-md-12 col-lg-3 event-book-button\"><!-- Noscript content for added SEO --><noscript><a href=\"https://www.eventbrite.co.uk/e/programming-101-tickets-`eventId`\"rel=\"noopener noreferrer\" target=\"_blank\"></noscript><!-- You can customize this button any way you like --><button id=\"`eventbriteWidgetModalTriggerEventId`\" class=\"btn btn-primary float-right\"type=\"button\">Register</button><noscript></a>Register for tickets on Eventbrite</noscript></div></div></div></div>"
+eventTemplate = "<div class=\"row card\"><div class=\"col-12`eventClass`\"><div class=\"row\"><div class=\"col-sm-4 col-lg-2 event-date\"><span class=\"event-date-month\">`month`</span> <span class=\"event-date-day\">`day`</span><p><span class=\"event-date-start-time\">`eventStart``eventStartAmPm` - </span><span class=\"event-date-end-time\">`eventEnd``eventEndAmPm`</span></p></div><div class=\"col-sm-8 col-lg-10 event-title\"><span class=\"event-title\">`eventName`</span></div></div><div class=\"row\"><div class=\"col-md-12 col-lg-9 event-description\"><span class=\"event-description\">`eventDescription`</span></div><div class=\"col-md-12 col-lg-3 event-book-button\"><!-- Noscript content for added SEO --><noscript><a href=\"https://www.eventbrite.co.uk/e/programming-101-tickets-`eventId`\"rel=\"noopener noreferrer\" target=\"_blank\"></noscript><!-- You can customize this button any way you like --><button id=\"`eventbriteWidgetModalTriggerEventId`\" class=\"btn `registerButtonClass` float-right\"type=\"button\">`registerButtonText`</button><noscript></a>Register for tickets on Eventbrite</noscript></div></div></div></div>"
 widgetPrefix = "var orderComplete = function () {var resultString = \"Order complete!\";alert(resultString);console.log(resultString);};"
 widgetTemplate = "/* `eventName` */ window.EBWidgets.createWidget({widgetType: 'checkout',eventId: '`eventId`',modal: true,modalTriggerElementId: '`eventbriteWidgetModalTriggerEventId`',onOrderComplete: orderComplete});"
 
@@ -45,7 +45,14 @@ def getEventsAsHtml(event, lambda_context):
 
         ticketClasses = getEventTicketClasses(eventId)['ticket_classes']
         onSaleStatus = '' if ticketClasses == [] else ticketClasses[0]['on_sale_status']
-        eventClass = ' event-sold-out' if onSaleStatus == 'SOLD_OUT' else ''
+        
+        eventClass = ''
+        registerButtonClass = 'btn-primary'
+        registerButtonText = 'Register'
+        if onSaleStatus == 'SOLD_OUT':
+            eventClass = ' event-sold-out'
+            registerButtonClass = 'btn-default'
+            registerButtonText = 'Sold out'
         
         startDate = datetime.strptime(event['start']['local'], "%Y-%m-%dT%H:%M:%S")
         endDate = datetime.strptime(event['end']['local'], "%Y-%m-%dT%H:%M:%S")
@@ -71,6 +78,9 @@ def getEventsAsHtml(event, lambda_context):
         if event['status'] == "live":
             content = content + eventTemplate \
                 .replace("`eventClass`", eventClass) \
+                .replace("`registerButtonClass`", registerButtonClass) \
+                .replace("`registerButtonText`", registerButtonText) \
+                .replace("`eventClass`", eventClass) \
                 .replace("`month`", month) \
                 .replace("`day`", str(day)) \
                 .replace("`eventStart`", str(eventStart)) \
@@ -87,4 +97,4 @@ def getEventsAsHtml(event, lambda_context):
                 .replace("`eventId`", eventId) \
                 .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
 
-    return {'content': content, 'widgets': widgets}
+    return {'statusCode': 200, 'content': content, 'widgets': widgets}
