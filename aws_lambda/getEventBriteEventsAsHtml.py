@@ -16,7 +16,7 @@ def getEventBriteEventsAsHtml(event, lambda_context):
     response = session.get(
         url='https://www.eventbriteapi.com/v3/organizations/464103861019/events/',
         headers={
-            "Authorization": "Bearer X6NY5BM5UQ3RKQNGHRD3",
+            "Authorization": "Bearer <key>",
             "Content-Type": "application/json"
         }
     )
