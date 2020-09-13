@@ -84,7 +84,7 @@ Copy the includes code `<br />
 ## Sitemap
 All pages not defined as a default in _config.yml are added to the sitemap
 
-To exclude a specific page use the snippet `sitemap:false` at the top of the page
+To exclude a specific page use the snippet `sitemap: false` at the top of the page
 
 :warning: **If you are including the page in another page (using `include_relative`)**: add the page as a default in `_config.yml` otherwise the `sitemap:false` is displayed as HTML on the page.
 
