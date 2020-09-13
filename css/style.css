@@ -391,7 +391,7 @@ div.event-book-button {
 
 /*Resources*/
 .color-slack{
-    color:var(--colour-light-primary);
+    color:var(--colour-black);
 }
 
 .color-github{
@@ -399,7 +399,7 @@ div.event-book-button {
 }
 
 .color-slides{
-    color:var(--colour-light-primary);
+    color:var(--colour-black);
 }
 
 
