@@ -99,17 +99,20 @@ To exclude a specific page use the snippet `sitemap:false` at the top of the pag
 
 All files in `_include` are excluded from the sitemap automatically
 ## Adding a page to the typed suffix functionality
-* Add a variable to the suffix-lists.js file with the first word of the page title. Assign the array you want to use to the variable. 
+
+* Add a key to the Jekyll build options at the top of the page
 
 e.g. 
 
-For a page named "Home"
-
-```javascript
-var Languages = ["Java","HTML"]
-var Home = Languages
 ```
-
+suffixes:
+    - Databases,
+    - Docker,
+    - Git,
+    - SQL,
+    - Kubernetes,
+    - Us
+```
 
 
 
