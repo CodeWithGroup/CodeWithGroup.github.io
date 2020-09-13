@@ -87,4 +87,4 @@ def getEventsAsHtml(event, lambda_context):
                 .replace("`eventId`", eventId) \
                 .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
 
-    return {'content': content, 'widgets': widgets}
+    return {'statusCode': 200, 'content': content, 'widgets': widgets}
