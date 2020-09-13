@@ -10,6 +10,7 @@
     --colour-light-highlight: #adffd2;
     --colour-black: #000000;
     --colour-white: #f8f8f8;
+    --color-link: #A52A2A;
 }
 
 /* Links */
@@ -18,7 +19,7 @@ a:focus,
 a:hover {
     text-decoration: solid underline;
     /* color: var(--colour-light-primary); */
-    color: brown;
+    color: var(--color-link);
 }
 
 a, a:focus {
@@ -225,6 +226,7 @@ iframe {
     padding: 30px;
 }
 
+
 /* Activity and resource cards */
 
 .card {
@@ -386,6 +388,21 @@ div.event-book-button {
 .contact-method-label {
     width: 7.5em;
 }
+
+/*Resources*/
+.color-slack{
+    color:var(--colour-light-primary);
+}
+
+.color-github{
+    color:var(--colour-black);
+}
+
+.color-slides{
+    color:var(--colour-light-primary);
+}
+
+
 
 /* Twitter */
 
