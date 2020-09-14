@@ -23,7 +23,7 @@
         $.ajax({
             "async": true,
             "crossDomain": true,
-            "url": "https://9buw6tj3aj.execute-api.eu-west-2.amazonaws.com/default/",
+            "url": "https://9buw6tj3aj.execute-api.eu-west-2.amazonaws.com/CodeWithAPI/",
             "method": "GET",
             "headers": {
                 "Content-Type": "application/json"
@@ -31,7 +31,7 @@
         }).done(function(data) {
             console.log(data.body);
 
-            $("#events-scheduled").append(data.content);
+            $("#events-scheduled").html(data.content);
             $("#eventBriteWidgets").append(data.widgets);
             $.globalEval(data.widgets);
         });

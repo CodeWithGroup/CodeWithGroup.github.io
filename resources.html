@@ -1,6 +1,18 @@
 ---
-title: Resources
 layout: default
+suffixes:
+    - AndroidStudio,
+    - IDLE,
+    - IntelliJ,
+    - VisualStudio,
+    - VSCode,
+    - Coolors,
+    - CodePen,
+    - FontAwesome,
+    - GoogleFonts,
+    - Repl,
+    - Us
+title: Resources
 ---
 
 <h1>{{page.title}}</h1>
@@ -15,10 +27,13 @@ layout: default
     We've listed some of those too.
 </p>
 <p>
-    Jump to: <a href="#resources-ides">Integrated Development Environments (IDEs)</a> | <a href="#resources-tools">Other
-        Tools</a>
+    Jump to:
+    <a href="#resources-links">Useful Links</a> |
+    <a href="#resources-ides">Integrated Development Environments (IDEs)</a> | 
+    <a href="#resources-tools">Other Tools</a>
 </p>
-
+{% include_relative pages-resources/resources-links.html %}
+{% include back-to-top.html %}
 {% include_relative pages-resources/resources-ideas.html %}
 {% include back-to-top.html %}
 {% include_relative pages-resources/resources-tools.html %}
