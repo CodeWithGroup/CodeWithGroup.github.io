@@ -78,7 +78,7 @@ Jeykll has functionality to include files, which this site makes extensive use o
 
 If you need any help, contact one of the pople who have already added themselves.
 
-# Sitemap
+## Sitemap
 All pages not defined as a default in _config.yml are added to the sitemap
 
 To exclude a specific page use the snippet `sitemap: false` at the top of the page
