@@ -49,13 +49,13 @@ Use [this guide](https://jekyllrb.com/docs/installation/) to setup Jekyll for yo
 
 Open a command line in the root directory of the repository
 
-Run `jekyll build` to build the site, this will produce a `_site` folder with the required content
+Run `bundle exec jekyll build` to build the site, this will produce a `_site` folder with the required content
 
 >:Warning: do not edit anything in the site folder as it will not be comitted and is overwritten everytime you build the site.
 
 To rebuild the site after a file change append `--watch` to the end of the command. 
 
-e,g. `jekyll build --watch`
+e.g. `bundle exec jekyll build --watch`
 
 Once you have a `_site` folder open the `index.html` file inside to view the site.
 
