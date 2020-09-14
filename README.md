@@ -44,7 +44,9 @@ Quoted from https://jekyllrb.com/docs/
 ## Jekyll setup
 
 If you're familiar with Ruby gems, run the following:
+
 `gem install bundle`
+
 `gem install jekyll`
 
 If this is your first time using Ruby or gems, use [this guide](https://jekyllrb.com/docs/installation/) to setup Jekyll for your operating system.
