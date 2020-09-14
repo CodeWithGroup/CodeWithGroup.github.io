@@ -16,6 +16,7 @@ description_paragraphs:
 
 languages:
   - Javascript
+  - Typescript
   - Bash
   - Python
   - Java
@@ -29,8 +30,11 @@ technologies:
   - NodeJS
   - React
   - Vue
+  - Express
+  - Jest
 
 tools:
   - Git
+  - GitHub
   - VS Code
   - Docker
