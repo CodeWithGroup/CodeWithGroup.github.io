@@ -1,6 +1,11 @@
 ---
-title: Code of Conduct
 layout: default
+suffixes:
+    - Assurance,
+    - Safeguards,
+    - Security,
+    - Us
+title: Code of Conduct
 ---
 
 # Code of Conduct
