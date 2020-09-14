@@ -43,13 +43,19 @@ Quoted from https://jekyllrb.com/docs/
 
 ## Jekyll setup
 
-Use [this guide](https://jekyllrb.com/docs/installation/) to setup Jekyll for your operating system.
+If you're familiar with Ruby gems, run the following:
+`gem install bundle`
+`gem install jekyll`
+
+If this is your first time using Ruby or gems, use [this guide](https://jekyllrb.com/docs/installation/) to setup Jekyll for your operating system.
 
 ## Building the site
 
-Open a command line in the root directory of the repository
+Open a command line in the root directory of the repository.
 
-Run `bundle exec jekyll build` to build the site, this will produce a `_site` folder with the required content
+If this is the first time you have built the site, make sure you have run `bundle pack` before attempting to build the site using jekyll.
+
+Otherwise, run `bundle exec jekyll build` to build the site, this will produce a `_site` folder with the required content.
 
 >:Warning: do not edit anything in the site folder as it will not be comitted and is overwritten everytime you build the site.
 
