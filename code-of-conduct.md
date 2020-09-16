@@ -1,4 +1,5 @@
 ---
+permalink: /code-of-conduct/
 layout: default
 suffixes:
     - Assurance,
