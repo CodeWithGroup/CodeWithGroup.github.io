@@ -57,15 +57,13 @@ Open a command line in the root directory of the repository.
 
 If this is the first time you have built the site, make sure you have run `bundle pack` before attempting to build the site using jekyll.
 
-Otherwise, run `bundle exec jekyll build` to build the site, this will produce a `_site` folder with the required content.
+>:Warning: The website uses extensionless links, meaning we don't need to include the '.html' extension on web pages and in anchor (&lt;a&gt;) links. In order that these links work while you view the site locally, open a new command-line window, navigate to the folder containing the website's source code, and run `bundle exec jekyll serve`. Leave that window running while you make your changes. This will start a local server and the address is shown in the command-line.
+
+The site rebuilds after every change, so just refresh the page in your browser to see the changes. 
 
 >:Warning: do not edit anything in the site folder as it will not be comitted and is overwritten everytime you build the site.
 
-To rebuild the site after a file change append `--watch` to the end of the command. 
 
-e.g. `bundle exec jekyll build --watch`
-
-Once you have a `_site` folder open the `index.html` file inside to view the site.
 
 ## Includes
 
@@ -76,8 +74,8 @@ Jeykll has functionality to include files, which this site makes extensive use o
 ## To add yourself to the people page
 
 * Create a branch
-* Make a copy of one of the existing bios in *pages-people* 
-* Name it using the convention people-*yourname* 
+* Make a copy of one of the existing bios in *_data/people/*
+* Name it using the convention *yourname* 
 * Modify to be your bio including
     * Photograph
     * Information paragraph
@@ -85,9 +83,6 @@ Jeykll has functionality to include files, which this site makes extensive use o
     * Things you can help with
 
 If you need any help, contact one of the pople who have already added themselves.
-
-Copy the includes code `<br />
-{% include_relative pages-people/people-yourname.html %}` to the bottom of people.html (ensure you update the file name)
 
 ## Sitemap
 All pages not defined as a default in _config.yml are added to the sitemap
