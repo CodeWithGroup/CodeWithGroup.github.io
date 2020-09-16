@@ -5,8 +5,10 @@ suffixes:
     - Drew,
     - Keiran,
     - Jim,
+    - Jonathan,
     - Liz,
     - Sean,
+    - Simon,
     - Us
 title: People
 ---
@@ -25,3 +27,9 @@ title: People
 {% include_relative pages-people/people-sean.html %}
 <br />
 {% include_relative pages-people/people-simon.html %}
+
+{% for person_hash in site.data.people %}
+{% assign person = person_hash[1] %}
+  <br />
+  {% include_relative _includes/person.html person=person %}
+{% endfor %}

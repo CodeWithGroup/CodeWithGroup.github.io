@@ -1,0 +1,40 @@
+first_name: "Jonathan"
+last_name: "Cowling"
+anchor: "jonathan-cowling"
+photo: "jonathan-profile-photo.jpg"
+roles: "Mentor"
+twitter_handle: "_cowlingj_"
+description_paragraphs:
+  - >
+    Jonathan is an Associate Consultant at Infinity Works after recently graduating from the University of Manchester.
+    His love of code stems from a keen interest in peering behind the curtain to see how things work (or don't).
+  - >
+    Most of the projects he's working on now use JavaScript,
+    but Jonathan has experience in a bunch of different areas including Android development.
+  - >
+    Aside from the many projects he tinkers with, Jonathan enjoys playing Dungeons and Dragons in his spare time.
+
+languages:
+  - Javascript
+  - Typescript
+  - Bash
+  - Python
+  - Java
+  - HTML
+  - CSS
+
+technologies:
+  - JSON
+  - Linux
+  - Kubernetes
+  - NodeJS
+  - React
+  - Vue
+  - Express
+  - Jest
+
+tools:
+  - Git
+  - GitHub
+  - VS Code
+  - Docker
