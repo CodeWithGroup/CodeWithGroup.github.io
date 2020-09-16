@@ -440,6 +440,10 @@ div.event-book-button {
         width: initial;
     }
 
+    .page-wrapper .page-content>div {
+        padding: 0;
+    }
+
     .main-logo-title h1 {
         color: var(--colour-black);
         font-family: "Boogaloo";
