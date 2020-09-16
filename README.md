@@ -57,17 +57,13 @@ Open a command line in the root directory of the repository.
 
 If this is the first time you have built the site, make sure you have run `bundle pack` before attempting to build the site using jekyll.
 
-Otherwise, run `bundle exec jekyll serve` to build the site, this will produce a `_site` folder with the required content and start a local server (usually at 127.0.0.1:4000)
+>:Warning: The website uses extensionless links, meaning we don't need to include the '.html' extension on web pages and in anchor (&lt;a&gt;) links. In order that these links work while you view the site locally, open a new command-line window, navigate to the folder containing the website's source code, and run `bundle exec jekyll serve`. Leave that window running while you make your changes. This will start a local server and the address is shown in the command-line.
 
 The site rebuilds after every change, so just refresh the page in your browser to see the changes. 
 
 >:Warning: do not edit anything in the site folder as it will not be comitted and is overwritten everytime you build the site.
 
-To rebuild the site after a file change append `--watch` to the end of the command. 
 
-e.g. `bundle exec jekyll build --watch`
-
->:Warning: The website uses extensionless links, meaning we don't need to include the '.html' extension on web pages and in anchor (&lt;a&gt;) links. In order that these links work while you view the site locally, open a new command-line window, navigate to the folder containing the website's source code, and run `bundle exec jekyll serve`. Leave that window running while you make your changes.
 
 ## Includes
 
