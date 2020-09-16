@@ -2,7 +2,7 @@
 <div class="row person-blurb">
     <div class="col-md-4 col-lg-5 col-xl-3">
         <div class="mb-2 box-shadow text-center">
-            <img class="profile-photo" src="./images/{{ include.person.photo | default: 'keyboard-green.png' }}" />
+            <img class="profile-photo" src="{{site.url}}/images/{{ include.person.photo | default: 'keyboard-green.png' }}" />
         </div>
         <div class="col-12 text-center">
             <h4>{{ include.person.first_name }} {{ include.person.last_name }}</h4>
