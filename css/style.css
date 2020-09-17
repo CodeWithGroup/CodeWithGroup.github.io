@@ -22,7 +22,8 @@ a:hover {
     color: var(--color-link);
 }
 
-a, a:focus {
+a,
+a:focus {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -38,11 +39,11 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.sidebar-dropdown > a:hover {
+.sidebar-dropdown>a:hover {
     font-size: 105%;
 }
 
-.intro-icon > a:hover {
+.intro-icon>a:hover {
     font-size: 115%;
 }
 
@@ -65,34 +66,39 @@ a.sr-only-focusable[href="#page-content"]:focus {
     border: 1px solid var(--colour-white);
 }
 
-.btn-primary
- {
+.btn-primary {
     color: #fff;
     background-color: var(--colour-light-primary);
     border-color: var(--colour-light-secondary);
     box-shadow: none;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
     background-color: var(--colour-light-primary);
     border-color: var(--colour-light-secondary);
     box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
 }
 
-.btn-primary.hover, .btn-primary:hover,
-.btn-primary.focus, .btn-primary:focus
-{
+.btn-primary.hover,
+.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus {
     color: #fff;
     background-color: var(--colour-light-primary);
     border-color: var(--colour-light-secondary);
     box-shadow: 0 0 0 0.2rem var(--colour-light-highlight);
 }
 
-input#mc-embedded-subscribe, input.btn {
+input#mc-embedded-subscribe,
+input.btn {
     margin: 0;
 }
 
@@ -210,7 +216,7 @@ iframe {
 }
 
 .page-wrapper .page-content>div {
-    padding: 20px 1em 18px 2em;
+    padding: 0;
 }
 
 .page-wrapper .page-content>div.unpadded {
@@ -342,7 +348,8 @@ img.profile-photo {
 }
 
 /* Events */
-section#events-drop-ins .card, section#events-scheduled .card {
+section#events-drop-ins .card,
+section#events-scheduled .card {
     margin: 0.5em 0.5em 0.5em -0.5em
 }
 
@@ -358,15 +365,17 @@ span.event-date-month {
 span.event-date-day {
     color: initial;
 }
+
 span.event-date-start-time {
     color: initial;
-    font-size:large
+    font-size: large
 }
+
 span.event-date-end-time {
     color: initial;
-    font-size:large
-
+    font-size: large
 }
+
 span.event-title {
     font-family: 'Boogaloo';
     font-size: xx-large;
@@ -390,16 +399,16 @@ div.event-book-button {
 }
 
 /*Resources*/
-.color-slack{
-    color:var(--colour-black);
+.color-slack {
+    color: var(--colour-black);
 }
 
-.color-github{
-    color:var(--colour-black);
+.color-github {
+    color: var(--colour-black);
 }
 
-.color-slides{
-    color:var(--colour-black);
+.color-slides {
+    color: var(--colour-black);
 }
 
 
@@ -416,19 +425,30 @@ div.event-book-button {
     color: var(--colour-white);
 }
 
-.colour-label{
-    margin-top:0.2em;
+.colour-label {
+    margin-top: 0.2em;
 }
 
 /*404*/
 
-.error-template {padding: 40px 15px;text-align: center;}
-.error-actions {margin-top:15px;margin-bottom:15px;}
-.error-actions .btn { margin-right:10px; text-decoration: none;}
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.error-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.error-actions .btn {
+    margin-right: 10px;
+    text-decoration: none;
+}
 
 /* RESIZING (min-width) */
- 
-@media (min-width: 526px) {
+
+@media screen and (min-width: 526px) {
     .page-wrapper .main-logo {
         display: initial;
         text-align: left;
@@ -450,7 +470,7 @@ div.event-book-button {
     }
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
     .center-when-small {
         text-align: left;
     }
@@ -474,13 +494,17 @@ div.event-book-button {
         display: none;
     }
 
+    .page-wrapper .page-content>div {
+        padding: 20px 1em 18px 2em;
+    }
+
     hr {
         border: 1px solid var(--colour-white);
         margin: 0 8em 0.5em 0;
     }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .masthead,
     .mastfoot,
     .cover-container {
