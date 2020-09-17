@@ -1,0 +1,13 @@
+name: "website-edits"
+question: "I've spotted a problem/something missing on the website. Can I fix it myself?"
+answer: "            <p>
+                Yes! Our website is built from
+                <a href=\"https://github.com/CodeWithGroup/CodeWithGroup.github.io\">this GitHub repository</a>
+                and is yours to edit if you see a problem or want to make any additions. There are plenty of
+                instructions on the README page, so have a read through that and start editing.
+              </p>
+              <p>
+                If you've never used GitHub before and want someone to show you how it works, put a message in
+                the Slack workspace and someone should pick it up. There are also slides for a GitHub workshop 
+                available, so you could ask about those too.
+            </p>"

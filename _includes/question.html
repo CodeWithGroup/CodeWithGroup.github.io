@@ -1,0 +1,16 @@
+<div class="card faq-question-card">
+    <div class="card-header" id="heading-{{ include.question.name }}">
+        <button class="btn btn-link faq-question collapsed" data-toggle="collapse" data-target="#collapse-{{ include.question.name }}" aria-expanded="false"
+            aria-controls="collapse-{{ include.question.name }}">
+            {{ include.question.question }}
+        </button>
+    </div>
+
+    <div id="collapse-{{ include.question.name }}" class="collapse" aria-labelledby="heading-{{ include.question.name }}" data-parent="#accordion">
+        <div class="card-body">
+            <p>
+                {{ include.question.answer }}
+            </p>
+        </div>
+    </div>
+</div>
