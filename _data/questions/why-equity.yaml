@@ -1,0 +1,17 @@
+id: "why-equity"
+question: "Why do you have an equity officer and not an equality officer?"
+answer: "            <div class=\"row\">
+              <div class=\"col-md-6 text-center\">
+                  <img class=\"faq\" src=\"/images/equality.png\">
+              </div>
+              <div class=\"col-md-6 text-center\">
+                  <img class=\"faq\" src=\"/images/equity.png\">
+              </div>
+          </div>
+          <p>
+              <br />
+              Equality is where everyone is supported equally, and has the same access to support, whereas
+              equity is where people have the right support to get them to the same level as others even
+              when they start from a less advantageous position. We realise that some people are going to need more
+              help than others - for all sorts of reasons - and we wanted to make that clear from the outset.
+          </p>"

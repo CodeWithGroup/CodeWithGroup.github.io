@@ -290,17 +290,13 @@ iframe {
 
 /* Logo */
 
-.main-logo {
-    padding-right: 1em;
-}
-
 .main-logo img {
     height: 48pt;
 }
 
 .main-logo-title {
     text-align: center;
-    width: 92%;
+    width: 100%;
 }
 
 .main-logo-title h1 {
@@ -411,12 +407,29 @@ div.event-book-button {
     color: var(--colour-black);
 }
 
-
-
 /* Twitter */
 
 #twitterButton i {
     font-size: 1.2em;
+}
+
+/*FAQ*/
+
+.faq-question {
+    color: var(--colour-light-primary)
+}
+
+.faq-question:hover {
+    color: var(--colour-dark-primary)
+}
+
+.faq-question-card {
+    margin-left: 0;
+    padding: 0;
+}
+
+.faq-question-card img.faq {
+    max-height: 205px;
 }
 
 /* Branding */
@@ -479,6 +492,10 @@ div.event-book-button {
         width: 120px;
     }
 
+    .main-logo {
+        padding-right: 1em;
+    }
+
     span#small-screen-break {
         display: none;
     }
@@ -505,6 +522,7 @@ div.event-book-button {
 }
 
 @media screen and (min-width: 992px) {
+
     .masthead,
     .mastfoot,
     .cover-container {

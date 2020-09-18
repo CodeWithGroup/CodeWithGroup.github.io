@@ -1,0 +1,9 @@
+name: "ad-hoc-help"
+question: "Do I have to wait for drop-ins to ask for help?"
+answer: "            <p>
+                CodeWith isn't just a series of events, it's a community of people who do their best to help each other.
+                If you visit our <a target=\"_blank\" href=\"https://codewithpeople.slack.com\">Slack workspace</a>
+                or our <a target=\"_blank\" href=\"https://discord.gg/DrZ7B7q\">Discord server</a> there'll usually be
+                someone there. Most of the time they'll be able to help, or will at least know who to ask for an answer, 
+                but if not then at least you have some people you can talk to about the problem to try to find a way forward.
+            </p>"
