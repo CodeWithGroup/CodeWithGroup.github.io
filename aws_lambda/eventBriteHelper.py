@@ -60,6 +60,10 @@ def getEventsAsHtml(event, lambda_context):
     ticketClasses = []    
 
     content = ""
+    dropins = ""
+    huddles = ""
+    workshops = ""
+    
     widgets = widgetPrefix
 
     eventData = getOrganisationEvents(organisationId)
@@ -103,28 +107,43 @@ def getEventsAsHtml(event, lambda_context):
             eventEnd -= 12
             eventEndAmPm = "pm"
 
-        if event['status'] == "live":
-            content = content + eventTemplate \
-                .replace("`eventClass`", eventClass) \
-                .replace("`registerButtonClass`", registerButtonClass) \
-                .replace("`registerButtonText`", registerButtonText) \
-                .replace("`eventClass`", eventClass) \
-                .replace("`month`", month) \
-                .replace("`day`", str(day)) \
-                .replace("`eventStart`", str(eventStart)) \
-                .replace("`eventStartAmPm`", eventStartAmPm) \
-                .replace("`eventEnd`", str(eventEnd)) \
-                .replace("`eventEndAmPm`", eventEndAmPm) \
-                .replace("`eventName`", eventName) \
-                .replace("`eventDescription`", eventDescription) \
-                .replace("`eventId`", eventId) \
-                .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
+        eventHtml = eventTemplate \
+            .replace("`eventClass`", eventClass) \
+            .replace("`registerButtonClass`", registerButtonClass) \
+            .replace("`registerButtonText`", registerButtonText) \
+            .replace("`eventClass`", eventClass) \
+            .replace("`month`", month) \
+            .replace("`day`", str(day)) \
+            .replace("`eventStart`", str(eventStart)) \
+            .replace("`eventStartAmPm`", eventStartAmPm) \
+            .replace("`eventEnd`", str(eventEnd)) \
+            .replace("`eventEndAmPm`", eventEndAmPm) \
+            .replace("`eventName`", eventName) \
+            .replace("`eventDescription`", eventDescription) \
+            .replace("`eventId`", eventId) \
+            .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
 
-            widgets = widgets + "\r\n" + widgetTemplate \
-                .replace("`eventName`", eventName) \
-                .replace("`eventId`", eventId) \
-                .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
+        widgets += "\r\n" + widgetTemplate \
+            .replace("`eventName`", eventName) \
+            .replace("`eventId`", eventId) \
+            .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
 
-    return {'statusCode': 200, 'content': content, 'widgets': widgets}
+        content += eventHtml
+        
+        if 'drop' in eventName.lower() and 'in' in eventName.lower():
+            dropins += eventHtml
+        elif 'huddle' in eventName.lower():
+            huddles += eventHtml
+        else:
+            scheduled += eventHtml
 
+    if dropins == "":
+        dropins = "<p>We don't have any drop-ins scheduled at the moment. Ask on Slack if you'd like us to arrange one.</p>"
 
+    if huddles == "":
+        huddles = "<p>We don't have any huddles scheduled at the moment. Ask on Slack if you'd like us to arrange one.</p>"
+
+    if workshops == "":
+        workshops = "<p>We don't have any workshops planned at the moment. Ask on Slack if you'd like us to arrange one.</p>"
+
+    return {'statusCode': 200, 'content': content, 'dropins': dropins, 'workshops': workshops, 'widgets': widgets}
