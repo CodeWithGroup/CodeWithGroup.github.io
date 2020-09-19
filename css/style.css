@@ -461,7 +461,25 @@ div.event-book-button {
 
 /* RESIZING (min-width) */
 
-@media screen and (min-width: 526px) {
+@media screen and (min-width: 576px) {
+    .logo-col {
+        width: 120px;
+    }
+
+    .main-logo {
+        padding-right: 1em;
+    }
+
+    span#small-screen-break {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .center-when-small {
+        text-align: left;
+    }
+
     .page-wrapper .main-logo {
         display: initial;
         text-align: left;
@@ -481,27 +499,7 @@ div.event-book-button {
         margin-top: -5px;
         text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     }
-}
 
-@media screen and (min-width: 576px) {
-    .center-when-small {
-        text-align: left;
-    }
-
-    .logo-col {
-        width: 120px;
-    }
-
-    .main-logo {
-        padding-right: 1em;
-    }
-
-    span#small-screen-break {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
     .page-wrapper.toggled .page-content {
         padding-left: 340px;
         padding-right: 40px;
