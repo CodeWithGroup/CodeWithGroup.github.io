@@ -56,9 +56,6 @@ def processEventTicketClassesResponse(response):
     ticketClasses = json.loads(response.text)['ticket_classes']
 
 def getEventsAsHtml(event, lambda_context):
-    organisationEvents = {}
-    ticketClasses = []    
-
     content = ""
     dropins = ""
     huddles = ""
@@ -75,7 +72,7 @@ def getEventsAsHtml(event, lambda_context):
         
         eventId = event['id']
 
-        ticketClass = ticketClassData[eventId]['ticket_classes']
+        ticketClasses = ticketClassData[eventId]['ticket_classes']
         onSaleStatus = '' if ticketClasses == [] else ticketClasses[0]['on_sale_status']
         
         eventClass = ''
@@ -146,4 +143,4 @@ def getEventsAsHtml(event, lambda_context):
     if workshops == "":
         workshops = "<p>We don't have any workshops planned at the moment. Ask on Slack if you'd like us to arrange one.</p>"
 
-    return {'statusCode': 200, 'content': content, 'dropins': dropins, 'workshops': workshops, 'widgets': widgets}
+    return {'statusCode': 200, 'content': content, 'dropins': dropins, 'huddles': huddles, 'workshops': workshops, 'widgets': widgets}
