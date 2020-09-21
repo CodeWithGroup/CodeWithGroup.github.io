@@ -1,6 +1,9 @@
-from datetime import datetime
-from requests import Request, Session
+import asyncio
 import json
+
+from aiohttp import ClientSession
+from datetime import datetime
+from requests import Session
 
 session = Session()
 headers = {
@@ -8,42 +11,71 @@ headers = {
     "Content-Type": "application/json"
 }
 
+eventBriteApiUrl = "https://www.eventbriteapi.com/v3/"
 organisationId = "464103861019"
-monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
+monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 eventTemplate = "<div class=\"row card\"><div class=\"col-12`eventClass`\"><div class=\"row\"><div class=\"col-sm-4 col-lg-2 event-date\"><span class=\"event-date-month\">`month`</span> <span class=\"event-date-day\">`day`</span><p><span class=\"event-date-start-time\">`eventStart``eventStartAmPm` - </span><span class=\"event-date-end-time\">`eventEnd``eventEndAmPm`</span></p></div><div class=\"col-sm-8 col-lg-10 event-title\"><span class=\"event-title\">`eventName`</span></div></div><div class=\"row\"><div class=\"col-md-12 col-lg-9 event-description\"><span class=\"event-description\">`eventDescription`</span></div><div class=\"col-md-12 col-lg-3 event-book-button\"><!-- Noscript content for added SEO --><noscript><a href=\"https://www.eventbrite.co.uk/e/programming-101-tickets-`eventId`\"rel=\"noopener noreferrer\" target=\"_blank\"></noscript><!-- You can customize this button any way you like --><button id=\"`eventbriteWidgetModalTriggerEventId`\" class=\"btn `registerButtonClass` float-right\"type=\"button\">`registerButtonText`</button><noscript></a>Register for tickets on Eventbrite</noscript></div></div></div></div>"
 widgetPrefix = "var orderComplete = function () {var resultString = \"Order complete!\";alert(resultString);console.log(resultString);};"
 widgetTemplate = "/* `eventName` */ window.EBWidgets.createWidget({widgetType: 'checkout',eventId: '`eventId`',modal: true,modalTriggerElementId: '`eventbriteWidgetModalTriggerEventId`',onOrderComplete: orderComplete});"
 
-def getOrganisationUrl(organisationId):
-    return "https://www.eventbriteapi.com/v3/organizations/" + str(organisationId)
-
-def getEventUrl(eventId):
-    return "https://www.eventbriteapi.com/v3/events/" + str(eventId)
-
-def getResponse(url):
-    response = session.get(url = url, headers = headers)
-    return json.loads(response.text)
+async def fetchEventTicketClasses(session, eventId):
+    url = eventBriteApiUrl + "events/" + str(eventId) + "/ticket_classes/"
+    async with session.get(url = url, headers = headers) as response:
+        responseJson = await response.json()
+        return {'eventId': eventId, 'response': responseJson}
 
 def getOrganisationEvents(organisationId):
-    return getResponse(getOrganisationUrl(organisationId) + "/events/")
+    eventsUrl = eventBriteApiUrl + "organizations/" + str(organisationId) + "/events/"
+    response = session.get(url = eventsUrl, headers = headers)
+    return json.loads(response.text)['events']
+    
+async def getEventTicketClasses(eventData):
+    async with ClientSession() as session:
+        asyncTasks = []
+        for event in eventData:
+            asyncTasks.append(fetchEventTicketClasses(session, event['id']))
 
-def getEventAttendees(eventId):
-    return getResponse(getEventUrl(eventId) + "/attendees/")
+        responses = await asyncio.gather(*asyncTasks, return_exceptions=True)
 
-def getEventTicketClasses(eventId):
-    return getResponse(getEventUrl(eventId) + "/ticket_classes/")
+        ticketClassData = {}
+        for response in responses:
+            if response['response']['pagination']['object_count'] == 0:
+                continue
+
+            ticketClassData[response['eventId']] = response['response']
+        
+        return ticketClassData
+
+def processOrganisationEventsResponse(response):
+    global organisationEvents
+    organisationEvents = json.loads(response.text)
+
+def processEventTicketClassesResponse(response):
+    global ticketClasses
+    ticketClasses = json.loads(response.text)['ticket_classes']
 
 def getEventsAsHtml(event, lambda_context):
-    data = getOrganisationEvents(organisationId)
+    organisationEvents = {}
+    ticketClasses = []    
 
     content = ""
+    dropins = ""
+    huddles = ""
+    workshops = ""
+    
     widgets = widgetPrefix
 
-    for event in data['events']:
+    eventData = getOrganisationEvents(organisationId)
+    ticketClassData = asyncio.run(getEventTicketClasses(eventData))
+
+    for event in eventData:
+        if event['status'] != "live":
+            continue
+        
         eventId = event['id']
 
-        ticketClasses = getEventTicketClasses(eventId)['ticket_classes']
+        ticketClass = ticketClassData[eventId]['ticket_classes']
         onSaleStatus = '' if ticketClasses == [] else ticketClasses[0]['on_sale_status']
         
         eventClass = ''
@@ -75,26 +107,43 @@ def getEventsAsHtml(event, lambda_context):
             eventEnd -= 12
             eventEndAmPm = "pm"
 
-        if event['status'] == "live":
-            content = content + eventTemplate \
-                .replace("`eventClass`", eventClass) \
-                .replace("`registerButtonClass`", registerButtonClass) \
-                .replace("`registerButtonText`", registerButtonText) \
-                .replace("`eventClass`", eventClass) \
-                .replace("`month`", month) \
-                .replace("`day`", str(day)) \
-                .replace("`eventStart`", str(eventStart)) \
-                .replace("`eventStartAmPm`", eventStartAmPm) \
-                .replace("`eventEnd`", str(eventEnd)) \
-                .replace("`eventEndAmPm`", eventEndAmPm) \
-                .replace("`eventName`", eventName) \
-                .replace("`eventDescription`", eventDescription) \
-                .replace("`eventId`", eventId) \
-                .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
+        eventHtml = eventTemplate \
+            .replace("`eventClass`", eventClass) \
+            .replace("`registerButtonClass`", registerButtonClass) \
+            .replace("`registerButtonText`", registerButtonText) \
+            .replace("`eventClass`", eventClass) \
+            .replace("`month`", month) \
+            .replace("`day`", str(day)) \
+            .replace("`eventStart`", str(eventStart)) \
+            .replace("`eventStartAmPm`", eventStartAmPm) \
+            .replace("`eventEnd`", str(eventEnd)) \
+            .replace("`eventEndAmPm`", eventEndAmPm) \
+            .replace("`eventName`", eventName) \
+            .replace("`eventDescription`", eventDescription) \
+            .replace("`eventId`", eventId) \
+            .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
 
-            widgets = widgets + "\r\n" + widgetTemplate \
-                .replace("`eventName`", eventName) \
-                .replace("`eventId`", eventId) \
-                .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
+        widgets += "\r\n" + widgetTemplate \
+            .replace("`eventName`", eventName) \
+            .replace("`eventId`", eventId) \
+            .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
 
-    return {'statusCode': 200, 'content': content, 'widgets': widgets}
+        content += eventHtml
+        
+        if 'drop' in eventName.lower() and 'in' in eventName.lower():
+            dropins += eventHtml
+        elif 'huddle' in eventName.lower():
+            huddles += eventHtml
+        else:
+            scheduled += eventHtml
+
+    if dropins == "":
+        dropins = "<p>We don't have any drop-ins scheduled at the moment. Ask on Slack if you'd like us to arrange one.</p>"
+
+    if huddles == "":
+        huddles = "<p>We don't have any huddles scheduled at the moment. Ask on Slack if you'd like us to arrange one.</p>"
+
+    if workshops == "":
+        workshops = "<p>We don't have any workshops planned at the moment. Ask on Slack if you'd like us to arrange one.</p>"
+
+    return {'statusCode': 200, 'content': content, 'dropins': dropins, 'workshops': workshops, 'widgets': widgets}

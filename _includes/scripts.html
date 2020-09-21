@@ -29,9 +29,9 @@
                 "Content-Type": "application/json"
             }
         }).done(function(data) {
-            console.log(data.body);
-
-            $("#events-scheduled").html(data.content);
+            $("#events-drop-ins").html(data.dropins);
+            $("#events-huddles").html(data.huddles);
+            $("#events-workshops").html(data.workshops);
             $("#eventBriteWidgets").append(data.widgets);
             $.globalEval(data.widgets);
         });
