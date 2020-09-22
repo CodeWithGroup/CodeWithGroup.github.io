@@ -175,6 +175,7 @@ iframe {
 }
 
 .center-when-small {
+    padding-top: 1em;
     text-align: center;
 }
 
@@ -477,6 +478,7 @@ div.event-book-button {
 
 @media screen and (min-width: 769px) {
     .center-when-small {
+        padding-top: 0;
         text-align: left;
     }
 
@@ -487,6 +489,7 @@ div.event-book-button {
     }
 
     .page-wrapper .main-logo-title {
+        padding-left: 0;
         text-align: left;
         width: initial;
     }
