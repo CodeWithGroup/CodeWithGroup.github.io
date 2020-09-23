@@ -1,8 +1,15 @@
 name: "how-to-mentor"
 question: "How do I become a mentor/event organiser?"
-answer: "            <p>
+answer: !join "            <p>
                 First of all, let someone know you're interested. Have a chat with one of the existing mentors or
                 someone on the committee so that we can get an idea of what you want to achieve and what support you
-                need. From there we'll be able to add you into the appropriate Slack channels, give you a folder
-                of your own in our Google Drive, show you how to set up events, and so on.
+                need.
+              </p>
+              <p>
+                When you're ready to begin mentoring, complete the 
+                <a href=\"!SITE_URL!/mentor-application\">mentor application form</a>. From there we'll be able to
+                add you into the appropriate Slack channels, give you a folder of your own in our Google Drive, show
+                you how to set up events, and so on.
               </p>"
+
+              
