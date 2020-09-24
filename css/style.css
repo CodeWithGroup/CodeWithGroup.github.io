@@ -350,7 +350,8 @@ img.profile-photo {
 
 /* Events */
 section#events-drop-ins .card,
-section#events-scheduled .card {
+section#events-huddles .card,
+section#events-workshops .card {
     margin: 0.5em 0.5em 0.5em -0.5em
 }
 
