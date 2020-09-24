@@ -1,0 +1,53 @@
+---
+permalink: /admin/
+layout: default
+suffixes:
+- Assistance,
+- Power,
+- Resources,
+- Responsibility,
+- Us
+title: Home
+sitemap: false
+---
+
+
+<h1>Useful Links</h1>
+
+<div class="row">
+    <div class="col-12">
+<<<<<<< HEAD
+            <h4>
+                <a href="https://forms.gle/HDu49ukTBM6uLpBCA" target="_blank">Event Request/Kick-Off Form</a>
+            </h4>
+            <h4>
+                <a href="https://analytics.google.com/analytics/web/#/report/visitors-overview/a174926144w242581676p226110493/_u.date00=20200901&_u.date01=20200913" target="_blank">Google Analytics</a>
+            </h4>
+            <h4>
+                <a href="https://drive.google.com/drive/folders/1Tcl8a0EkjOB1FLnkaqtMES6Wg8xoW_tx?usp=sharing" target="_blank">Meeting Minutes</a>
+            </h4>
+            <h4>
+                <a href="https://trello.com/codewith2" target="_blank">Trello</a>
+            </h4>
+            <h4>
+                <a href="{{site.url}}/event-process" target="_blank">Event process</a>
+            </h4>
+=======
+        <h2>Admin</h2>
+        <h4><a href="https://analytics.google.com/analytics/web/#/report/visitors-overview/a174926144w242581676p226110493/_u.date00=20200901&_u.date01=20200913"
+                target="_blank">Google Analytics</a></h4>
+        <h4><a href="https://drive.google.com/drive/folders/1Tcl8a0EkjOB1FLnkaqtMES6Wg8xoW_tx?usp=sharing"
+                target="_blank">Meeting Minutes</a></h4>
+        <h4><a href="https://trello.com/codewith2" 
+            target="_blank">Trello</a></h4>
+
+        <h2>Events</h2>
+        <h4><a href="https://docs.google.com/spreadsheets/d/1khRdEN3QSD9yQnv9zz_TshaJ4QcczEtEoy1BAv6_UKU/edit?usp=sharing"
+            target="_blank">Feedback</a></h4>
+        <h4><a href="https://forms.gle/HDu49ukTBM6uLpBCA" 
+            target="_blank">Request/Kick-Off Form</a></h4>
+        <h4><a href="{{site.url}}/event-process" 
+            target="_blank">Process</a></h4>
+>>>>>>> 6f1114d... Add event feedback to admin page. Add headings
+    </div>
+</div>
