@@ -9,7 +9,7 @@
     <div id="collapse-{{ include.question.name }}" class="collapse" aria-labelledby="heading-{{ include.question.name }}" data-parent="#accordion">
         <div class="card-body">
             <p>
-                {{ include.question.answer }}
+                {{ include.question.answer | replace: '!SITE_URL!', site.url }}
             </p>
         </div>
     </div>
