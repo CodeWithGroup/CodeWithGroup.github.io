@@ -54,12 +54,8 @@
         
         function filterCards(filterText) {
             resetCards();
-            filteredCards = $('div.align-items-stretch');
-            
             $.each(allCards, function() {
                 var card = $(this);
-                console.log(card);
-                console.log(card.not(':has(span.badge:contains("' + filterText + '"))'));
                 if (card.not(':has(span.badge:contains("' + filterText + '"))').length > 0) {
                     card.toggleClass('d-flex');
                     $(card).hide();
