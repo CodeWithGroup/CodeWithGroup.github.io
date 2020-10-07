@@ -38,6 +38,34 @@
     }
 </script>
 
+<script type="text/javascript">
+    if ("{{page.title}}" === "Activities" || "{{page.title}}" === "Resources") {
+        allCards = $('div.align-items-stretch:has(span.badge)');
+
+        function resetCards() {
+            $.each(allCards, function() {
+                var card = $(this);
+                if (!card.hasClass('d-flex')) {
+                    card.toggleClass('d-flex');
+                }
+                $(card).show();
+            });
+        }
+        
+        function filterCards(filterText) {
+            resetCards();
+            $.each(allCards, function() {
+                var card = $(this);
+                if (card.not(':has(span.badge:contains("' + filterText + '"))').length > 0) {
+                    card.toggleClass('d-flex');
+                    $(card).hide();
+                }
+            });
+        }
+    }
+</script>
+
+
 <!-- Placeholder for dynamic EventBrite integration script generation -->
 <script id="eventBriteWidgets" type="text/javascript">
 </script>
