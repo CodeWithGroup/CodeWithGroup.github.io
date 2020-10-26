@@ -9,7 +9,7 @@ $(function () {
 
     function showText(target, message, index, maxInterval) {
         if (index < message.length) {
-            $(target).append(message[index++]);
+            $(target).text(message.substring(0, ++index));
 
             var typingInterval = maxInterval - intervalTypingMillisecondsBase;
             if (typingInterval < 0) {
