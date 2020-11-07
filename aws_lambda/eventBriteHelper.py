@@ -132,7 +132,7 @@ def getEventsAsHtml(event, lambda_context):
         elif 'huddle' in eventName.lower():
             huddles += eventHtml
         else:
-            scheduled += eventHtml
+            workshops += eventHtml
 
     if dropins == "":
         dropins = "<p>We don't have any drop-ins scheduled at the moment. Ask on Slack if you'd like us to arrange one.</p>"
