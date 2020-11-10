@@ -131,13 +131,9 @@ body.landing-page {
     background-color: var(--colour-dark-secondary);
 }
 
-nav {
-    background-color: var(--colour-white);
-    height: 100%;
-}
-
 nav#sidebar {
     background-color: var(--colour-dark-primary);
+    height: 100%;
 }
 
 h1,
@@ -338,6 +334,16 @@ div.intro-text>p {
     font-size: large;
 }
 
+/* Events */
+div.nav.nav-tabs {
+    border: none;
+}
+
+div#events-tabs-panes > .tab-pane {
+    padding: 0.5em;
+    border: 1px solid #dee2e6;
+}
+
 /* About */
 img.profile-photo {
     width: 100%;
@@ -352,7 +358,7 @@ img.profile-photo {
 section#events-drop-ins .card,
 section#events-huddles .card,
 section#events-workshops .card {
-    margin: 0.5em 0.5em 0.5em -0.5em
+    margin: 0.5em 0.5em 0.5em 0.5em
 }
 
 div.event-date {
