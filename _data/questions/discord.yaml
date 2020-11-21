@@ -1,0 +1,12 @@
+name: "discord"
+question: "I've signed up for one of your online events, how do I join it?"
+answer: "<p>
+  We use <a target=\"_blank\" href=\"https://discord.com\">Discord</a> for our online events, you can join the server
+  using this <a target=\"_blank\" href=\"https://discord.gg/jKFXkTd\">invite link</a>. We recommend using the app to attend
+    our workshops as some attendees have reported issues with the web app and watching screen shares.
+
+    Once you have joined the server, check your email before the event which will tell you which channel to join. Most
+    of our events start at the Main Stage channel.
+</p>
+"
+
