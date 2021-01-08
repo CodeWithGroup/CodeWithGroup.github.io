@@ -1,0 +1,13 @@
+name: "cancel"
+question: "I've signed up for one of the events but can no longer attend. How do I cancel my ticket?"
+answer: "<p>
+All our events are free, so you can cancel your tickets to an event via <a target=\"_blank\" href=\"https://www.eventbrite.co.uk/\">Eventbrite</a> any time before the event starts. 
+</p>
+  <h4>Go to your order.</h4>
+  <p><a target=\"_blank\" href=\"https://www.eventbrite.com/login\">Log in</a> to your Eventbrite account, then click your order on the Tickets page.</p>
+  <h4>Choose \"Cancel Order\".</h4>
+  <p>Select \"Cancel Order\" (next to your order details). Then choose \"Yes, cancel this order\".</p>
+  <h4>Check for an email from Eventbrite.</h4>
+  <p>You will receive an email to confirm cancellation.</p>
+  <p>If after following these steps you still struggle to cancel your ticket feel free to contact us using the <a href=\"!SITE_URL!/contact\">Contact Page</a>.</p>
+"
