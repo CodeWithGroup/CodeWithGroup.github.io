@@ -13,6 +13,7 @@ $(function () {
                 checkWidthToggleClass();
             }
         } else {
+            console.log("CheckWidthFalse")
             checkWidthToggleClass();
         }
     }
@@ -32,5 +33,5 @@ $(function () {
     // Execute on load
     checkWidth(true);
     // Bind event listener
-    $(window).resize(checkWidth(false));
+    $(window).resize(checkWidth);
 });
