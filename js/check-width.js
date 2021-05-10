@@ -8,7 +8,6 @@ $(function () {
     var windowWidth = $window.width();
 
     function checkWidth(reload) {
-        console.log(reload)
         if (!reload) {
             if ($(window).width() === windowWidth) { //prevents the sidebar being opened on scroll on Apple browsers
                 checkWidthToggleClass();
