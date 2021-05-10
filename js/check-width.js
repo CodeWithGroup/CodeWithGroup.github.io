@@ -7,22 +7,31 @@ $(function () {
     // Store the window width
     var windowWidth = $window.width();
 
-    function checkWidth() {
-        if ($(window).width() != windowWidth) {
-            var windowsize = $window.width();
-            if (windowsize <= 768) {
-                if ($pane.hasClass('toggled')) {
-                    $pane.toggleClass('toggled');
-                }
+    function checkWidth(reload) {
+        console.log(reload)
+        if (!reload) {
+            if ($(window).width() === windowWidth) { //prevents the sidebar being opened on scroll on Apple browsers
+                checkWidthToggleClass();
             }
-            else if (!$pane.hasClass('toggled')) {
-                $pane.addClass('toggled');
+        } else {
+            checkWidthToggleClass();
+        }
+    }
+
+    function checkWidthToggleClass() {
+        var windowsize = $window.width();
+        if (windowsize <= 768) {
+            if ($pane.hasClass('toggled')) {
+                $pane.toggleClass('toggled');
             }
+        }
+        else if (!$pane.hasClass('toggled')) {
+            $pane.addClass('toggled');
         }
     }
 
     // Execute on load
-    checkWidth();
+    checkWidth(true);
     // Bind event listener
-    $(window).resize(checkWidth);
+    $(window).resize(checkWidth(false));
 });
