@@ -56,15 +56,13 @@ It may be appropriate for a recruitment company to sponsor refreshments and do a
 
 ### What to do if you have a concern
 
-If you are being harassed or feel uncomfortable, notice that someone else is being harassed, or have any other concerns, please speak to the event organiser(s) immediately. You can also contact the event organiser through Meetup and Slack.
+If you are being harassed or feel uncomfortable, notice that someone else is being harassed, or have any other concerns, CodeWith is here to listen to your concerns or questions. You don’t have to make a formal report unless you want to. You don't have to give us details of the harassment.
 
-If you are not able to to do this or you feel that your concern is not being taken seriously then please contact the Equity Officer. This is currently Marie Fayard, who can be reached on Discord, on Slack, or by email ([marie.fayard@gmail.com](mailto:marie.fayard@gmail.com)).
+If you wish to report something, please use [this form]({{site.url}}/code-of-conduct-report) to send a report directly to the Code of Conduct Committee.
 
-CodeWith is here to listen to your concerns or questions and you don’t have to make a formal report unless you want to. You do not have to give us details of the harassment.
+If you witness a incident at an event that you think should be addressed right away, please bring it to the attention of the event organiser(s). If necessary, the event organiser(s) will help you contact police or venue security, or otherwise assist those experiencing harassment to feel safe for the duration of the event. After the event, please also submit a report using the [reporting form]({{site.url}}/code-of-conduct-report), so that the Code of Conduct Committee has your account of the incident.
 
-If you wish to report it, we will take details of the harassment and work with you to respond to the issue in a way that helps you feel safe.
-
-If necessary, the event organisers will help participants contact police or venue security, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the event.
+If you have a concern or a question and do not wish to make a formal report, you can write to the Equity Officer at [equityofficer.codewith@gmail.com](mailto:equityofficer.codewith@gmail.com).
 
 ### Where and when this code of conduct applies
 
