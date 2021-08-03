@@ -8,12 +8,12 @@ $(function () {
     var windowWidth = $window.width();
 
     function checkWidth(reload) {
-        console.log(reload)
         if (!reload) {
             if ($(window).width() === windowWidth) { //prevents the sidebar being opened on scroll on Apple browsers
                 checkWidthToggleClass();
             }
         } else {
+            console.log("CheckWidthFalse")
             checkWidthToggleClass();
         }
     }
@@ -33,5 +33,5 @@ $(function () {
     // Execute on load
     checkWidth(true);
     // Bind event listener
-    $(window).resize(checkWidth(false));
+    $(window).resize(checkWidth);
 });
