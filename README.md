@@ -3,10 +3,10 @@ This repository holds the code for CodeWith, a group in the UK that offers free 
 
 # Our Event
 We run events online and manage it all through 
-[our Slack group](https://www.codewith.org.uk/contact.html).
+[our Slack group](https://www.codewith.org.uk/contact).
 It's all free, so if you're in the area please come along!
 
-You can see our current events at https://www.codewith.org.uk/events.html
+You can see our current events at https://www.codewith.org.uk/events
 
 # Contributing to this repository
 ## Repository branches
@@ -19,7 +19,7 @@ Feature/* | New code being developed | Contributors
 
 ## Pull requests
 
-Please submit pull requests with useful descriptions, if you don't know how to use pull requests ask in [our Slack group](https://www.codewith.org.uk/contact.html).
+Please submit pull requests with useful descriptions, if you don't know how to use pull requests ask in [our Slack group](https://www.codewith.org.uk/contact).
 
 
 ## Testing 
@@ -57,11 +57,11 @@ Open a command line in the root directory of the repository.
 
 If this is the first time you have built the site, make sure you have run `bundle pack` before attempting to build the site using jekyll.
 
->:Warning: The website uses extensionless links, meaning we don't need to include the '.html' extension on web pages and in anchor (&lt;a&gt;) links. In order that these links work while you view the site locally, open a new command-line window, navigate to the folder containing the website's source code, and run `bundle exec jekyll serve`. Leave that window running while you make your changes. This will start a local server and the address is shown in the command-line.
+:Warning: The website uses extensionless links, meaning we don't need to include the '.html' extension on web pages and in anchor (&lt;a&gt;) links. In order that these links work while you view the site locally, open a new command-line window, navigate to the folder containing the website's source code, and run `bundle exec jekyll serve`. Leave that window running while you make your changes. This will start a local server and the address is shown in the command-line.
 
 The site rebuilds after every change, so just refresh the page in your browser to see the changes. 
 
->:Warning: do not edit anything in the site folder as it will not be comitted and is overwritten everytime you build the site.
+:Warning: do not edit anything in the site folder as it will not be comitted and is overwritten everytime you build the site.
 
 
 
