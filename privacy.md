@@ -29,7 +29,7 @@ Google: [Privacy Policy](https://policies.google.com/privacy?hl=en-US)
 
 Facebook: [Privacy Policy](https://www.facebook.com/policy.php)
 
-Hotjar [Privacy Policy](https://www.hotjar.com/legal/policies/privacy/)
+Hotjar: [Privacy Policy](https://www.hotjar.com/legal/policies/privacy/)
 
 ## Who's Who
 
