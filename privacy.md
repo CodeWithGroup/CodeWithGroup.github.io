@@ -29,6 +29,8 @@ Google: [Privacy Policy](https://policies.google.com/privacy?hl=en-US)
 
 Facebook: [Privacy Policy](https://www.facebook.com/policy.php)
 
+Hotjar [Privacy Policy](https://www.hotjar.com/legal/policies/privacy/)
+
 ## Who's Who
 
 When this Privacy Policy uses the term "Organiser" we mean any of our mentors and volunteers running, hosting, or helping out with our various events and workshops, or anyone with administrator-level access to the Services. Any parties consuming information from or interacting with tools and documents provided using our Services are referred 
