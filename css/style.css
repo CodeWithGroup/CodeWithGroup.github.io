@@ -533,6 +533,14 @@ div.event-book-button {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 700px;
+    }
+}
+
 /*Cookie Notice*/
 
 #cookie-notice {
