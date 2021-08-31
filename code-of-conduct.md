@@ -58,7 +58,7 @@ It may be appropriate for a recruitment company to sponsor refreshments and do a
 
 If you are being harassed or feel uncomfortable, notice that someone else is being harassed, or have any other concerns, CodeWith is here to listen to your concerns or questions. You don’t have to make a formal report unless you want to. You don't have to give us details of the harassment.
 
-If you wish to report something, please use [this form]({{site.url}}/code-of-conduct-report) to send a report directly to the Code of Conduct Committee.
+If you wish to report something, please use the [Code Of Conduct Report Form]({{site.url}}/code-of-conduct-report) to send a report directly to the Code of Conduct Committee.
 
 If you witness a incident at an event that you think should be addressed right away, please bring it to the attention of the event organiser(s). If necessary, the event organiser(s) will help you contact police or venue security, or otherwise assist those experiencing harassment to feel safe for the duration of the event. After the event, please also submit a report using the [reporting form]({{site.url}}/code-of-conduct-report), so that the Code of Conduct Committee has your account of the incident.
 
@@ -83,6 +83,6 @@ Thank you
 This document was based on the [Sheffield Digital Code of Conduct](https://sheffield.digital/events/meetup-code-of-conduct/), which in turn is based on the work of JSConf, Geek Feminism, confcodeofconduct.com, and inspired by resources provided by Ashe Dryden.
 
 Licensed under a Creative Commons Attribution 3.0 Unported License.
-Version 1
+Version 2
 
-This is version 1 of the CodeWith Code of Conduct. It was last updated by Simon Davey on 31 August 2020. If you think we have made any errors or omissions, please contact us by email ([contact@codewith.org.uk](mailto:contact@codewith.org.uk)) or through one of the communication channels listed on the [contact page](contact.html).
+This is version 2 of the CodeWith Code of Conduct. It was last updated by Simon Davey on 31 August 2021. If you think we have made any errors or omissions, please contact us by email ([contact@codewith.org.uk](mailto:contact@codewith.org.uk)) or through one of the communication channels listed on the [contact page](contact.html).
