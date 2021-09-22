@@ -13,7 +13,6 @@ $(function () {
                 checkWidthToggleClass();
             }
         } else {
-            console.log("CheckWidthFalse")
             checkWidthToggleClass();
         }
     }
