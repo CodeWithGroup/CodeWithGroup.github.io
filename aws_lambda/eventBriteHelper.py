@@ -7,8 +7,7 @@ from requests import Session
 
 session = Session()
 headers = {
-    "Authorization": "Bearer <key>",
-    "Content-Type": "application/json"
+    "Authorization": "Bearer <key>"
 }
 
 eventBriteApiUrl = "https://www.eventbriteapi.com/v3/"
@@ -26,7 +25,7 @@ async def fetchEventTicketClasses(session, eventId):
         return {'eventId': eventId, 'response': responseJson}
 
 def getOrganisationEvents(organisationId):
-    eventsUrl = eventBriteApiUrl + "organizations/" + str(organisationId) + "/events/"
+    eventsUrl = eventBriteApiUrl + "organizations/" + str(organisationId) + "/events/?time_filter=current_future&status=live"
     response = session.get(url = eventsUrl, headers = headers)
     return json.loads(response.text)['events']
     

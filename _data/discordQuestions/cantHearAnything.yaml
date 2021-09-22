@@ -1,0 +1,7 @@
+name: "cantHearAnything"
+question: "I can't hear anything!?!"
+answer: "<p>
+    Make sure your speakers/headphones are plugged in/turned on. Make sure your system
+    volume is turned up.
+</p>
+"

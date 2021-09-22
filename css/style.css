@@ -471,6 +471,17 @@ div.event-book-button {
     text-decoration: none;
 }
 
+/*Discord*/
+
+.discord-image{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.discord-cols{
+    padding:10px;
+}
+
 /* RESIZING (min-width) */
 
 @media screen and (min-width: 576px) {
