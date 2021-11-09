@@ -14,7 +14,8 @@ eventBriteApiUrl = "https://www.eventbriteapi.com/v3/"
 organisationId = "464103861019"
 
 monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-eventTemplate = "<div class=\"row card\"><div class=\"col-12`eventClass`\"><div class=\"row\"><div class=\"col-sm-4 col-lg-2 event-date\"><span class=\"event-date-month\">`month`</span> <span class=\"event-date-day\">`day`</span><p><span class=\"event-date-start-time\">`eventStart``eventStartAmPm` - </span><span class=\"event-date-end-time\">`eventEnd``eventEndAmPm`</span></p></div><div class=\"col-sm-8 col-lg-10 event-title\"><span class=\"event-title\">`eventName`</span></div></div><div class=\"row\"><div class=\"col-md-12 col-lg-9 event-description\"><span class=\"event-description\">`eventDescription`</span></div><div class=\"col-md-12 col-lg-3 event-book-button\"><!-- Noscript content for added SEO --><noscript><a href=\"https://www.eventbrite.co.uk/e/programming-101-tickets-`eventId`\"rel=\"noopener noreferrer\" target=\"_blank\"></noscript><!-- You can customize this button any way you like --><button id=\"`eventbriteWidgetModalTriggerEventId`\" class=\"btn `registerButtonClass` float-right\"type=\"button\">`registerButtonText`</button><noscript></a>Register for tickets on Eventbrite</noscript></div></div></div></div>"
+eventTemplate = "<div class=\"row card\"><div class=\"col-12`eventClass`\"><div class=\"row\"><div class=\"col-sm-4 col-lg-2 event-date\"><span class=\"event-date-month\">`month`</span> <span class=\"event-date-day\">`day`</span><p><span class=\"event-date-start-time\">`eventStart``eventStartAmPm` - </span><span class=\"event-date-end-time\">`eventEnd``eventEndAmPm`</span></p></div><div class=\"col-sm-8 col-lg-10 event-title\"><span class=\"event-title\">`eventName`</span>`venueDetails`</div></div><div class=\"row\"><div class=\"col-md-12 col-lg-9 event-description\"><span class=\"event-description\">`eventDescription`</span></div><div class=\"col-md-12 col-lg-3 event-book-button\"><!-- Noscript content for added SEO --><noscript><a href=\"https://www.eventbrite.co.uk/e/programming-101-tickets-`eventId`\"rel=\"noopener noreferrer\" target=\"_blank\"></noscript><!-- You can customize this button any way you like --><button id=\"`eventbriteWidgetModalTriggerEventId`\" class=\"btn `registerButtonClass` float-right\"type=\"button\">`registerButtonText`</button><noscript></a>Register for tickets on Eventbrite</noscript></div></div></div></div>"
+venueTemplate = "<p><b>`venueName`</b>, `venueAddress`</p>"
 widgetPrefix = "var orderComplete = function () {var resultString = \"Order complete!\";alert(resultString);console.log(resultString);};"
 widgetTemplate = "/* `eventName` */ window.EBWidgets.createWidget({widgetType: 'checkout',eventId: '`eventId`',modal: true,modalTriggerElementId: '`eventbriteWidgetModalTriggerEventId`',onOrderComplete: orderComplete});"
 
@@ -28,6 +29,11 @@ def getOrganisationEvents(organisationId):
     eventsUrl = eventBriteApiUrl + "organizations/" + str(organisationId) + "/events/?time_filter=current_future&status=live"
     response = session.get(url = eventsUrl, headers = headers)
     return json.loads(response.text)['events']
+
+def getVenueDetails(venueId):
+    venuesUrl = eventBriteApiUrl + "venues/" + str(venueId)
+    response = session.get(url = venuesUrl, headers = headers)
+    return json.loads(response.text)
     
 async def getEventTicketClasses(eventData):
     async with ClientSession() as session:
@@ -70,6 +76,7 @@ def getEventsAsHtml(event, lambda_context):
             continue
         
         eventId = event['id']
+        venue = None if event['venue_id'] is None else getVenueDetails(event['venue_id'])
 
         ticketClasses = ticketClassData[eventId]['ticket_classes']
         onSaleStatus = '' if ticketClasses == [] else ticketClasses[0]['on_sale_status']
@@ -118,6 +125,14 @@ def getEventsAsHtml(event, lambda_context):
             .replace("`eventDescription`", eventDescription) \
             .replace("`eventId`", eventId) \
             .replace("`eventbriteWidgetModalTriggerEventId`", "eventbrite-widget-modal-trigger-" + eventId)
+
+        if venue is None:
+            eventHtml = eventHtml.replace("`venueDetails`", "")
+        else:
+            eventHtml = eventHtml \
+                .replace("`venueDetails`", venueTemplate) \
+                .replace("`venueName`", venue['name']) \
+                .replace("`venueAddress`", venue['address']['localized_address_display'])
 
         widgets += "\r\n" + widgetTemplate \
             .replace("`eventName`", eventName) \
