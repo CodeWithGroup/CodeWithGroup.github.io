@@ -1,0 +1,5 @@
+{% for testimonial_hash in site.data.testimonials %}
+{% assign testimonial = testimonial_hash[1] %}
+  <br />
+  {% include_relative _includes/testimonial.html testimonial=testimonial %}
+{% endfor %}
