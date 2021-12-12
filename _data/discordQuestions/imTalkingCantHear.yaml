@@ -1,0 +1,21 @@
+name: "imTalkingCantHear"
+question: "I'm talking but you can't hear me!"
+answer: "<p>
+    Make sure your microphone/headset is plugged in/turned on. Make sure your microphone is set in the settings.
+</p>
+<p> You can see settings by clicking the gear icon.
+</p>
+<img class=\"discord-image mg-fluid\" width=\"300\" src=\"../images/discord/discord-setting-button.png\">
+
+<p>Click \"Voice and Video\" </p>
+<img class=\"discord-image mg-fluid\" width=\"300\" src=\"../images/discord/discord-voice.png\">
+
+<p>Make Sure your microphone is selected here:</p>
+
+<img class=\"discord-image mg-fluid\" width=\"500\" src=\"../images/discord/discord-microphone-dropdown.png\">
+
+<p>You can test it by clicking the \"Let's Check\" button:</p>
+
+<img class=\"discord-image mg-fluid\" width=\"500\" src=\"../images/discord/discord-mic-test.png\">
+
+"
