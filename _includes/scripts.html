@@ -17,27 +17,6 @@
 <script type="text/javascript" src="{{site.url}}/js/sidebar.js"></script>
 <script type="text/javascript" src="{{site.url}}/js/typed-suffix.js"></script>
 
-<!-- Page-specific scripts -->
-<script type="text/javascript">
-    if ("{{page.title}}" === "Events") {
-        $.ajax({
-            "async": true,
-            "crossDomain": true,
-            "url": "https://9buw6tj3aj.execute-api.eu-west-2.amazonaws.com/CodeWithAPI/",
-            "method": "GET",
-            "headers": {
-                "Content-Type": "application/json"
-            }
-        }).done(function(data) {
-            $("#events-drop-ins").html(data.dropins);
-            $("#events-huddles").html(data.huddles);
-            $("#events-workshops").html(data.workshops);
-            $("#eventBriteWidgets").append(data.widgets);
-            $.globalEval(data.widgets);
-        });
-    }
-</script>
-
 <script type="text/javascript">
     if ("{{page.title}}" === "Activities" || "{{page.title}}" === "Resources") {
         allCards = $('div.align-items-stretch:has(span.badge)');
