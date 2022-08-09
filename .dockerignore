@@ -1,0 +1,7 @@
+.github/
+.jekyll-cache/
+_site/
+aws_lambda/
+docker/
+.gitignore
+README.md
