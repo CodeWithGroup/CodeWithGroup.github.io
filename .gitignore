@@ -1,6 +1,6 @@
 .vscode/
 .vs/
-.idea
+.idea/
 _site/
 .sass-cache/
 .jekyll-cache/

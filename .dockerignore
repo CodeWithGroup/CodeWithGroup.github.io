@@ -5,3 +5,9 @@ aws_lambda/
 docker/
 .gitignore
 README.md
+.idea/
+.vscode/
+.jekyll-metadata
+.bundle/
+vendor/
+.sass-cache/

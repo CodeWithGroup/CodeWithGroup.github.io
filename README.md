@@ -71,6 +71,16 @@ Jeykll has functionality to include files, which this site makes extensive use o
 
 # Useful guides
 
+## Using Docker
+
+* Install [Docker](https://www.docker.com/get-started/) & start docker service.
+* Build image with jekyll run `docker-compose up --build` 
+  * You will need to re-run this command if any dependencies or docker configs change.
+* When editing in the future, run `docker-compose up`.
+* Site is hosted at http://0.0.0.0:3000
+
+Any changes made will be passed through to the container. 
+
 ## To add yourself to the people page
 
 * Create a branch
