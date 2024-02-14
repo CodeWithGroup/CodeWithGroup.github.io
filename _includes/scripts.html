@@ -1,7 +1,6 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{{site.url}}/js/ie10-viewport-bug-workaround.js"></script>
 
-<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="></script>
@@ -16,27 +15,6 @@
 <script type="text/javascript" src="{{site.url}}/js/check-width.js"></script>
 <script type="text/javascript" src="{{site.url}}/js/sidebar.js"></script>
 <script type="text/javascript" src="{{site.url}}/js/typed-suffix.js"></script>
-
-<!-- Page-specific scripts -->
-<script type="text/javascript">
-    if ("{{page.title}}" === "Events") {
-        $.ajax({
-            "async": true,
-            "crossDomain": true,
-            "url": "https://9buw6tj3aj.execute-api.eu-west-2.amazonaws.com/CodeWithAPI/",
-            "method": "GET",
-            "headers": {
-                "Content-Type": "application/json"
-            }
-        }).done(function(data) {
-            $("#events-drop-ins").html(data.dropins);
-            $("#events-huddles").html(data.huddles);
-            $("#events-workshops").html(data.workshops);
-            $("#eventBriteWidgets").append(data.widgets);
-            $.globalEval(data.widgets);
-        });
-    }
-</script>
 
 <script type="text/javascript">
     if ("{{page.title}}" === "Activities" || "{{page.title}}" === "Resources") {
@@ -63,9 +41,4 @@
             });
         }
     }
-</script>
-
-
-<!-- Placeholder for dynamic EventBrite integration script generation -->
-<script id="eventBriteWidgets" type="text/javascript">
 </script>
