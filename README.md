@@ -3,7 +3,7 @@ This repository holds the code for CodeWith, a group in the UK that offers free 
 
 # Our Event
 We run events online and manage it all through 
-[our Slack group](https://www.codewith.org.uk/contact).
+[our Discord Server](https://www.codewith.org.uk/contact).
 It's all free, so if you're in the area please come along!
 
 You can see our current events at https://www.codewith.org.uk/events
@@ -19,7 +19,7 @@ Feature/* | New code being developed | Contributors
 
 ## Pull requests
 
-Please submit pull requests with useful descriptions, if you don't know how to use pull requests ask in [our Slack group](https://www.codewith.org.uk/contact).
+Please submit pull requests with useful descriptions, if you don't know how to use pull requests ask in [our Discord group](https://www.codewith.org.uk/contact).
 
 
 ## Testing 
