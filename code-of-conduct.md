@@ -23,7 +23,7 @@ We want to make sure that all CodeWith events are a harassment-free experience f
 
 We should all listen and communicate respectfully, regardless of appearance or background. We do not tolerate harassment of participants in any form.
 
-Sexual language and imagery are not appropriate for any venue, including talks, parties, Twitter, Facebook, Eventbrite, our Slack channel, and other online media.
+Sexual language and imagery are not appropriate for any venue, including talks, parties, Twitter, Facebook, Meetup, Eventbrite, our Slack channel, and other online media.
 
 CodeWith events are not for people to attend with the sole purpose of selling or recruiting.
 
