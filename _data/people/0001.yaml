@@ -1,40 +1,45 @@
 first_name: "Drew"
 last_name: "Morgan"
 anchor: "drew-morgan"
-photo: "drew-profile-photo.png"
+photo: "drew-profile-photo.jpg"
 roles: "Benevolent Leader, Mentor"
 twitter_handle: "dangerworm"
 description_paragraphs:
   - >
-    Drew has been coding since he was 7 years old and has worked in the healthcare, education and
-    finance sectors. After qualifying as a physics teacher in 2011, he taught for three years before
-    returning to software development and now works as a full-stack web and applications developer
-    for a healthcare company. He also has a
-    <a href="https://play.google.com/store/apps/details?id=com.drewmorgan.propertyprices">mobile app</a>
-    on the Google Play Store.
+    Drew has been coding since he was 7 years old and has worked in the healthcare, education, finance
+    and gaming industries. After qualifying as a physics teacher in 2011, he taught for three years before
+    returning to software development and now works as a senior developer and technical lead for a
+    consultancy in 'tech for good'. Drew specialises in back end and enterprise development, but knows
+    enough about front end development to get stuff done.
   - >
-    Drew loves science and technology and at university studied Physics for two years before changing
-    course and graduating with a degree in Computer Science with Artificial Intelligence. He plays
-    piano, tuba, guitar and clarinet, regularly goes bouldering indoors and is a BSAC scuba diving
-    instructor. Drew loves to share his experiences and will talk about anything with anyone.
+    Drew loves science and technology and has studied both Physics and Computer Science (with Artificial
+    Intelligence). Outside of work he is learning Esperanto, plays piano, tuba, and guitar, and is a BSAC 
+    scuba diving instructor. He also plays PC games when he has time and especially enjoys Elite Dangerous
+    in VR.
+  - >
+    Drew loves to share his experiences and will talk about anything with anyone.
 
 languages:
   - .Net
+  - Blockchain
   - C#
   - CSS
   - Cypher
+  - GraphQL
   - HTML
   - Javascript
   - jQuery
-  - Neo4J
   - Python
+  - Solidity
   - SQL
   - Typescript
   - Visual Basic
 
 technologies:
+  - APIs
   - JSON
   - Linux
+  - Neo4J
   - NodeJS
   - React
   - WPF
@@ -46,5 +51,6 @@ tools:
   - Git
   - GitHub
   - IDLE
+  - Postman
   - Visual Studio
   - VS Code
