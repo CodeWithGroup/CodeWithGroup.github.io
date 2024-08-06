@@ -1,0 +1,40 @@
+first_name: "Keiran"
+last_name: "Wilkinson"
+anchor: "keiran-wilkinson"
+photo: "keiran-profile-photo.png"
+roles: "Deputy Benevolent Leader, Mentor"
+twitter_handle: "keiranwdigital"
+description_paragraphs:
+  - >
+    After learning to code 8 years ago Keiran worked for a small startup digital agency while completing his A levels.
+    More recently Keiran works in the travel sector as a degree apprentice Technical Analyst while completing a degree in Digital and Technology solutions.
+  - >
+    When not working Keiran spends his time at Hackspace Manchester, working on various projects (most of which never get finished!). 
+    He also plays the euphonium and enjoys anything aviation related, including travelling to various photography events around the country.
+
+languages:
+  - ASP
+  - CSS
+  - HTML
+  - Java
+  - Javascript
+  - jQuery
+  - PHP
+  - Python
+  - SQL
+  - VB.Net
+
+technologies:
+  - JSON
+  - MySQL
+  - SQL Server
+  - Windows Forms
+  - Wordpress
+
+tools:
+  - Azure Data Studio
+  - Eclipse
+  - Git
+  - IDLE
+  - Visual Studio
+  - VS Code
