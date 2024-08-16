@@ -1,40 +1,32 @@
-first_name: "Jonathan"
-last_name: "Cowling"
-anchor: "jonathan-cowling"
-photo: "jonathan-profile-photo.jpg"
+first_name: "Peter"
+last_name: "Daily"
+anchor: "peter-daily"
+photo: "peter-profile-photo.png"
 roles: "Mentor"
-twitter_handle: "_cowlingj_"
+twitter_handle: "peterdaily"
 description_paragraphs:
   - >
-    Jonathan is an Associate Consultant at Infinity Works after recently graduating from the University of Manchester.
-    His love of code stems from a keen interest in peering behind the curtain to see how things work (or don't).
+    Peter is a self-taught developer who changed careers to web development
+    in 2016. He has since worked in the martech (marketing tech), digital agency,
+    telecommunications and property tech industries.
   - >
-    Most of the projects he's working on now use JavaScript,
-    but Jonathan has experience in a bunch of different areas including Android development.
-  - >
-    Aside from the many projects he tinkers with, Jonathan enjoys playing Dungeons and Dragons in his spare time.
+    Outside of work he enjoys mountain biking, going to music gigs and
+    playing video games. He is also a sports nerd and in particular an
+    insufferable Stockport County supporter.
 
 languages:
+  - CSS
+  - HTML
   - Javascript
   - Typescript
-  - Bash
-  - Python
-  - Java
-  - HTML
-  - CSS
 
 technologies:
-  - JSON
-  - Linux
-  - Kubernetes
+  - Angular
+  - Jest
   - NodeJS
   - React
-  - Vue
-  - Express
-  - Jest
+  - Testing
 
 tools:
   - Git
-  - GitHub
   - VS Code
-  - Docker

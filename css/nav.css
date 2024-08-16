@@ -1,0 +1,21 @@
+/*
+ * Globals
+ */
+
+ :root {
+    --colour-dark-primary: #1f5237;
+    --colour-dark-secondary: #00793c;
+    --colour-light-primary: #009545;
+    --colour-light-secondary: #00b050;
+    --colour-black: #000000;
+    --colour-white: #f8f8f8;
+}
+
+/* Navbar */
+.nav-pills .nav-link {
+    color: #f8f8f8;
+    background-color: #1f5237;
+    margin: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+}

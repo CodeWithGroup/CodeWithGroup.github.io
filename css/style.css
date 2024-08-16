@@ -17,7 +17,7 @@
 a,
 a:focus,
 a:hover {
-    text-decoration: solid underline;
+    text-decoration: none;
     /* color: var(--colour-light-primary); */
     color: var(--color-link);
 }
@@ -38,14 +38,10 @@ a:hover {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-
-.sidebar-dropdown>a:hover {
-    font-size: 105%;
-}
-
-.intro-icon>a:hover {
-    font-size: 115%;
-}
+/* 
+div {
+  border: solid red 1px;
+} */
 
 a.sr-only-focusable[href="#page-content"]:focus {
     position: absolute;
@@ -185,14 +181,6 @@ iframe {
     height: 100vh;
 }
 
-.page-wrapper .theme {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border-radius: 4px;
-    margin: 2px;
-}
-
 /* Sidebar Toggle */
 
 .page-wrapper.toggled .sidebar-wrapper {
@@ -208,16 +196,10 @@ iframe {
 .page-wrapper .page-content {
     display: inline-block;
     width: 100%;
-    padding-left: 0px;
-    padding-top: 40px;
 }
 
 .page-wrapper .page-content>div {
     padding: 0;
-}
-
-.page-wrapper .page-content>div.unpadded {
-    padding: 0 1em;
 }
 
 .page-wrapper .page-content {
@@ -229,7 +211,6 @@ iframe {
     padding: 30px;
 }
 
-
 /* Activity and resource cards */
 
 .card {
@@ -239,50 +220,6 @@ iframe {
 
 .badge {
     font-family: Roboto, sans-serif;
-}
-
-/* Scroll bar */
-
-::-webkit-scrollbar {
-    width: 5px;
-    height: 7px;
-}
-
-::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #525965;
-    border: 0px none #ffffff;
-    border-radius: 0px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #525965;
-}
-
-::-webkit-scrollbar-thumb:active {
-    background: #525965;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-    border: 0px none #ffffff;
-    border-radius: 50px;
-}
-
-::-webkit-scrollbar-track:hover {
-    background: transparent;
-}
-
-::-webkit-scrollbar-track:active {
-    background: transparent;
-}
-
-::-webkit-scrollbar-corner {
-    background: transparent;
 }
 
 /* Logo */
@@ -482,73 +419,8 @@ div.event-book-button {
     padding:10px;
 }
 
-/* RESIZING (min-width) */
-
 @media screen and (min-width: 576px) {
-    .logo-col {
-        width: 120px;
-    }
-
-    .main-logo {
-        padding-right: 1em;
-    }
-
     span#small-screen-break {
         display: none;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .center-when-small {
-        padding-top: 0;
-        text-align: left;
-    }
-
-    .page-wrapper .main-logo {
-        display: initial;
-        text-align: left;
-        width: initial;
-    }
-
-    .page-wrapper .main-logo-title {
-        padding-left: 0;
-        text-align: left;
-        width: initial;
-    }
-
-    .main-logo-title h1 {
-        color: var(--colour-black);
-        font-family: "Boogaloo";
-        font-size: 48pt;
-        letter-spacing: 0.05em;
-        margin-top: -5px;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
-    }
-
-    .page-wrapper.toggled .page-content {
-        padding-left: 340px;
-        padding-right: 40px;
-    }
-
-    .page-wrapper.toggled .main-logo {
-        display: none;
-    }
-
-    .page-wrapper .page-content>div {
-        padding: 20px 1em 18px 2em;
-    }
-
-    hr {
-        border: 1px solid var(--colour-white);
-        margin: 0 8em 0.5em 0;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 700px;
     }
 }
