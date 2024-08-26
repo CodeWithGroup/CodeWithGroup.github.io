@@ -1,44 +1,32 @@
-first_name: "Nathan"
-last_name: "Scott"
-anchor: "nathan-scott"
-photo: "drew-profile-photo.jpg"
-roles: "Benevolent Leader, Mentor"
-twitter_handle: "dangerworm"
+first_name: "Peter"
+last_name: "Daily"
+anchor: "peter-daily"
+photo: "peter-profile-photo.png"
+roles: "Mentor"
+twitter_handle: "peterdaily"
 description_paragraphs:
   - >
-    My journey into coding began during my time as a support worker. In my spare time, 
-    I was an avid gamer, which led me to ask the pivotal question: 
-    "How do I program this?" From that moment, I fully committed to teaching myself how to code. 
-    This passion ultimately led me to graduate from the Northcoders bootcamp. Now, six years later, 
-    I'm still deeply immersed in coding and continue to love every moment of it.
+    Peter is a self-taught developer who changed careers to web development
+    in 2016. He has since worked in the martech (marketing tech), digital agency,
+    telecommunications and property tech industries.
   - >
-    When I'm not coding, I enjoy immersing myself in the world of board games and card games. 
-    I'm an active participant in the local gaming community and often attend events where 
-    I can connect with others who share this passion. Whether it's strategizing over a complex 
-    board game or enjoying the quick thinking required in a card game, 
-    I find these activities both relaxing and intellectually stimulating. 
-    You can often find me at local events, engaging with fellow enthusiasts and exploring new games.
+    Outside of work he enjoys mountain biking, going to music gigs and
+    playing video games. He is also a sports nerd and in particular an
+    insufferable Stockport County supporter.
 
 languages:
   - CSS
   - HTML
-  - GraphQL
   - Javascript
   - Typescript
 
 technologies:
-  - APIs
-  - JSON
-  - REST
+  - Angular
+  - Jest
   - NodeJS
-  - MVC
   - React
-  - Express
-  - Prisma
-  - Bootstrap
+  - Testing
 
 tools:
   - Git
-  - GitHub
-  - Postman
   - VS Code

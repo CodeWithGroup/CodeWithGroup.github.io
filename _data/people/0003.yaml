@@ -1,32 +1,46 @@
-first_name: "Peter"
-last_name: "Daily"
-anchor: "peter-daily"
-photo: "peter-profile-photo.png"
-roles: "Mentor"
-twitter_handle: "peterdaily"
+first_name: "Nathan"
+last_name: "Scott"
+anchor: "nathan-scott"
+photo: "nathan.jpg"
+roles: "Host, Mentor"
+twitter_handle: "nathanscottSD"
 description_paragraphs:
   - >
-    Peter is a self-taught developer who changed careers to web development
-    in 2016. He has since worked in the martech (marketing tech), digital agency,
-    telecommunications and property tech industries.
+    Nathan's journey into coding began during his time as a support worker. He is an
+    avid gamer, which led him to ask the pivotal question: "How do I program this?"
+    From that moment, Nathan fully committed to teaching himself how to code. This passion
+    ultimately led him to graduate from the Northcoders bootcamp. Now, six years later,
+    he's still deeply immersed in coding and continues to love every moment of it.
   - >
-    Outside of work he enjoys mountain biking, going to music gigs and
-    playing video games. He is also a sports nerd and in particular an
-    insufferable Stockport County supporter.
+    When he's not coding, Nathan enjoys playing board games and card games. He is an active
+    participant in the local gaming community and often attends events where he can connect
+    with others who share his passion. Whether it's strategizing over a complex board game
+    or enjoying the quick thinking required in a card game, Nathan finds these activities
+    both relaxing and intellectually stimulating.
+  - >
+    You can often find Nathan at local events, engaging with fellow enthusiasts and exploring
+    new games.
 
 languages:
   - CSS
   - HTML
+  - GraphQL
   - Javascript
   - Typescript
 
 technologies:
-  - Angular
-  - Jest
+  - APIs
+  - JSON
+  - REST
   - NodeJS
+  - MVC
   - React
-  - Testing
+  - Express
+  - Prisma
+  - Bootstrap
 
 tools:
   - Git
+  - GitHub
+  - Postman
   - VS Code

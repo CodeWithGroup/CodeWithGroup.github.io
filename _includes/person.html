@@ -6,15 +6,13 @@
         </div>
         <div class="col-12 text-center">
             <h4>{{ include.person.first_name }} {{ include.person.last_name }}</h4>
+            <p class="text-muted no-margin">{{ include.person.roles }}</p>
         </div>
     </div>
     <div class="col-md-8 col-lg-6">
         <div class="row">
-            <div class="col col-md-6">
-                <p class="text-muted no-margin">{{ include.person.roles }}</p>
-            </div>
             {% if include.person.twitter_handle %}
-            <div class="col-md-6 twitter-mention-container text-right">
+            <div class="col-md-12 twitter-mention-container text-right">
                 <a href="https://twitter.com/intent/tweet?screen_name={{include.person.twitter_handle}}" class="twitter-mention-button"
                     data-show-count="false">
                     Tweet to @{{ include.person.twitter_handle }}
