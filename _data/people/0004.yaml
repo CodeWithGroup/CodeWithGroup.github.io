@@ -1,0 +1,44 @@
+first_name: "Nathan"
+last_name: "Scott"
+anchor: "nathan-scott"
+photo: "drew-profile-photo.jpg"
+roles: "Benevolent Leader, Mentor"
+twitter_handle: "dangerworm"
+description_paragraphs:
+  - >
+    My journey into coding began during my time as a support worker. In my spare time, 
+    I was an avid gamer, which led me to ask the pivotal question: 
+    "How do I program this?" From that moment, I fully committed to teaching myself how to code. 
+    This passion ultimately led me to graduate from the Northcoders bootcamp. Now, six years later, 
+    I'm still deeply immersed in coding and continue to love every moment of it.
+  - >
+    When I'm not coding, I enjoy immersing myself in the world of board games and card games. 
+    I'm an active participant in the local gaming community and often attend events where 
+    I can connect with others who share this passion. Whether it's strategizing over a complex 
+    board game or enjoying the quick thinking required in a card game, 
+    I find these activities both relaxing and intellectually stimulating. 
+    You can often find me at local events, engaging with fellow enthusiasts and exploring new games.
+
+languages:
+  - CSS
+  - HTML
+  - GraphQL
+  - Javascript
+  - Typescript
+
+technologies:
+  - APIs
+  - JSON
+  - REST
+  - NodeJS
+  - MVC
+  - React
+  - Express
+  - Prisma
+  - Bootstrap
+
+tools:
+  - Git
+  - GitHub
+  - Postman
+  - VS Code
