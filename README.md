@@ -33,7 +33,7 @@ Things to look out for when testing
 
 Before pull requests are merged maintainers should test all aspects of the site. 
 
-# Getting started with this site and Jekyll
+# Getting started with this site
 
 ## What is Jekyll?
 
@@ -41,9 +41,35 @@ Jekyll is a static site generator. It takes text written in your favorite markup
 
 Quoted from https://jekyllrb.com/docs/
 
+## Docker quickstart
+You may run Jekyll to serve the CodeWith website locally via docker
+
+You must first install [Docker](https://www.docker.com/) for your operating system.
+
+Next, you must then build the docker container, 
+that will install the dependencies required for the application to run. You will need to run this command
+at any point the Dockerfile changes to ensure you have the latest version of the container.
+
+```bash
+docker build . -f docker/bundle.Dockerfile --tag 'codewithgroup-website'
+```
+
+At any point at which you then want to run the server, use
+
+```bash
+docker run -it -v .:/app -p 127.0.0.1:4000:4000 codewithgroup-website
+```
+
+Despite what the output may say, you will access the CodeWith website at `127.0.0.1:4000`
+
+Changes to files within the project will prompt a recompile after some time, you'll need to refresh the page
+you're viewing in the browser to see the changes.
+
 ## Jekyll setup
 
-If you're familiar with Ruby gems, run the following:
+Provided you have followed the steps above, you may wish to decide to skip this step.
+
+However, if serving via Docker is unsuccessful, and you're familiar with Ruby gems, try running the following:
 
 `gem install bundle`
 
