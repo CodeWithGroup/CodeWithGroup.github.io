@@ -1,0 +1,40 @@
+<div class="row card">
+  <div class="col-12`eventClass`">
+    <div class="row">
+      <div class="col-sm-4 col-lg-2 event-date">
+        <span class="event-date-month">`month`</span> <span class="event-date-day">`day`</span>
+        <p>
+          <span class="event-date-start-time">`eventStart``eventStartAmPm` - </span>
+          <span class="event-date-end-time">`eventEnd``eventEndAmPm`</span>
+        </p>
+      </div>
+      <div class="col-sm-8 col-lg-10 event-title">
+        <span class="event-title">`eventName`</span>`venueDetails`</div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-9 event-description">
+          <span class="event-description">`eventDescription`</span>
+        </div>
+      <div class="col-md-12 col-lg-3 event-book-button">
+      <!-- Noscript content for added SEO -->
+      <noscript>
+        <a href="https://www.eventbrite.co.uk/e/online-coding-drop-in-tickets-`eventId`"rel="noopener noreferrer" target="_blank">Register</a>
+      </noscript>
+      <!-- You can customize this button any way you like -->
+      <button id="eventbrite-widget-modal-trigger-`eventId`" class="btn `registerButtonClass` float-right" type="button">`registerButtonText`</button>
+      <script type="text/javascript">
+          var onOrderComplete = function() {
+              console.log('Order complete!');
+          };
+
+          window.EBWidgets.createWidget({
+              widgetType: 'checkout',
+              eventId: '`eventId`',
+              modal: true,
+              modalTriggerElementId: 'eventbrite-widget-modal-trigger-`eventId`',
+              onOrderComplete
+          });
+      </script>
+    </div>
+  </div>
+</div>

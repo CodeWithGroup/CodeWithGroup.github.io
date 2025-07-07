@@ -63,8 +63,6 @@ The site rebuilds after every change, so just refresh the page in your browser t
 
 :Warning: do not edit anything in the site folder as it will not be comitted and is overwritten everytime you build the site.
 
-
-
 ## Includes
 
 Jeykll has functionality to include files, which this site makes extensive use of. You can find the documentation for includes here: https://jekyllrb.com/docs/includes/
